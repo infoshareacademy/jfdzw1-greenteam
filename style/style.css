@@ -1,0 +1,27 @@
+body{
+    background:white;
+}
+header .logo{float:left;max-height: 50px;max-width: 51px;}
+header nav {
+
+    background: lightgray;
+    clear: both;
+
+}
+header nav .menu {
+    clear:both
+}
+header nav .menu li {
+    list-style: none;
+    float:left;}
+
+main{background: gray;
+position:relative}
+.box{
+    widows: 100px;
+    height: 100px;
+    position: absolute;
+}
+.box1{background-color: red;left:5px;top:5px}
+.box2{background-color: gold; left:10px;top:10px}
+.box3{background-color: green;left:0;top:0;}
