@@ -1,0 +1,30 @@
+body {
+    background-color: blueviolet;
+}
+
+header img {
+    float: left;
+    max-height: 50px;
+    max-width: 51px;
+}
+
+header nav {
+    background: red;
+}
+
+header nav .menu {
+    background: red;
+}
+
+header nav .menu li {
+    list-style-type: none;
+    float: left;
+}
+
+.clear {
+    clear:both;
+}
+
+.clear {
+    float:left;
+}
