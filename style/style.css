@@ -80,6 +80,14 @@ section > .container {
     font-size:15px;
 }
 
+ a i {
+     background: #205D7A;
+     color: rgb(255, 255, 255);
+     border-radius: 5px;
+     height: 20px;
+     width: 20px;
+     text-align: center;
+ }
 
 .col-xs-3 {
     width: 33.33%;
@@ -142,4 +150,4 @@ section > .container {
         width: 150px;
     }
 
-    }}
+    }
