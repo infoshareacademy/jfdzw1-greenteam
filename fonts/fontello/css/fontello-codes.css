@@ -1,6 +1,8 @@
 
 .icon-mail:before { content: '\e800'; } /* '' */
 .icon-mobile:before { content: '\e801'; } /* '' */
+.icon-cancel:before { content: '\e802'; } /* '' */
+.icon-export-alt:before { content: '\f14d'; } /* '' */
 .icon-address-card:before { content: '\f2bb'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-facebook-squared:before { content: '\f30e'; } /* '' */

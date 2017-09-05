@@ -1,9 +1,11 @@
 #about-us
 {
-  background-color: #6256FF;
+  background: linear-gradient(#FFD53C, #4A3CFF);
+  opacity: 0.9;
   box-sizing: border-box;
   margin: 0 auto;
-  height: 500px;
+  height: 450px;
+  font-family: 'Lato', sans-serif;
 }
 
 #container
@@ -19,9 +21,11 @@
     {
       border-radius: 2px;
       margin: 5px;
-      padding: 5px;
+      padding: 10px;
       border: none;
+      font-family: 'Lato', sans-serif;
     }
+
     #one
     {
       margin: 10px auto;
@@ -33,28 +37,49 @@
       {
         width: 46%;
         margin: 0px auto;
-
+        background: #ecf0f1;
+        opacity: 0.8;
+      }
+      input:focus
+      {
+        background: #ecf0f1;
+        opacity: 1;
       }
     }
     #two
     {
       display: flex;
-      margin: 10px auto;
+      margin: 2px auto;
       input
       {
         width: 100%;
-        height: 20vh;
+        background: #ecf0f1;
+        opacity: 0.8;
+      }
+      input:focus
+      {
+        background: #ecf0f1;
+        opacity: 1;
       }
 
     }
     #three
     {
       display: flex;
-      margin: 10px auto;
+      margin: 2px auto;
       input
       {
         width: 100%;
+        height: 30vh;
+        background: #ecf0f1;
+        opacity: 0.8;
       }
+      input:focus
+      {
+        background: #ecf0f1;
+        opacity: 1;
+      }
+
     }
 
   }
@@ -62,7 +87,34 @@
   {
     ul
     {
+
       padding-left: 0px;
+      color: #ecf0f1;
+
+      #l-button
+      {
+        background: #FFD53C;
+        border: none;
+        padding: 8px;
+      }
+      #l-button:hover
+      {
+        background: #2318B2;
+        cursor: pointer;
+      }
+      #r-button
+      {
+        background: #2318B2;
+        border: none;
+        padding: 5px;
+        padding: 8px;
+      }
+      #r-button:hover
+      {
+        background: #FFD53C;
+        cursor: pointer;
+      }
+
       li
       {
         list-style: none;
@@ -71,6 +123,7 @@
         padding: 5px;
         border: 1px solid black;
         border-radius: 5px;
+
       }
     }
   }
@@ -83,11 +136,23 @@
   width: 30%;
   ul
   {
-    padding-left: 0px;
+    padding-left: 10px;
+
     li
     {
       list-style: none;
-      margin-top: 20px;
+      margin-top: 40px;
+      a
+      {
+        text-decoration: none;
+        color: #2318B2;
+      }
+      a:hover
+      {
+
+        color: #FFD53C ;
+      }
+
 
     }
   }
