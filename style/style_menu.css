@@ -3,19 +3,30 @@ body {
 }
 
 body header {
-    background-color: green;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+}
+
+body header div.logo-container {
+    background-color: deeppink;
+    float:left;
+    text-align: center;
+    padding: 10px;
 }
 
 body header div img.logo {
     background-color: blue;
-    float:left;
     max-height: 50px;
     max-width: 51px;
-    padding: 10px;
 }
 
 body header nav {
     background-color: red;
+    margin: auto;
 }
 
 body header nav ul.menu {
