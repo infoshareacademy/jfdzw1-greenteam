@@ -11,55 +11,55 @@ body header {
     border-bottom: 1px solid gray;
 }
 
-body header div.logo-container {
+body header div.logo-menu-container {
+    width: 70%;
+    margin: auto;
+}
+body header div div.logo-container {
     background-color: deeppink;
     float:left;
     text-align: center;
-    padding: 10px;
-}
-
-body header div img.logo {
-    background-color: blue;
-    max-height: 50px;
-    max-width: 51px;
-}
-
-body header nav {
-    background-color: red;
+    padding: 20px 0px ;
     margin: auto;
 }
 
-body header nav ul.menu {
-    background-color: gray;
+body header div div img.logo {
+    background-color: white;
+    max-height: 50px;
+    max-width: 60px;
+}
+
+body header div nav {
+    margin: auto;
+    margin-right: 400px;
+    float: right;
+
+}
+
+body header div nav ul.menu {
     list-style: none;
     margin: auto;
-    padding: 20px;
+    padding: 36px 20px 0px 20px;
     display: table;
 }
 
-body header nav ul li {
-    background-color: yellow;
+body header div nav ul li {
     float: left;
     margin: auto;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
-body header nav ul li a {
+body header div nav ul li a {
     font-size: 20px;
     padding: 4px;
     text-decoration: none;
 }
 
-body header nav ul li a:link, a:visited {
-    background-color: white;
+body header div nav ul li a:link, a:visited {
     color: black;
 }
 
-body header nav ul li a:hover, a:active {
+body header div nav ul li a:hover, a:active {
     background-color: black;
     color: white;
-}
-
-body header div.clear{
-    clear:both;
 }
