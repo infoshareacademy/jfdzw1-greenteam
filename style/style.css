@@ -1,5 +1,75 @@
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 @import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+
+
+body {
+    background-color: whitesmoke;
+}
+
+body header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid gray;
+}
+
+body header div.logo-menu-container {
+    width: 70%;
+    margin: auto;
+}
+body header div div.logo-container {
+    background-color: deeppink;
+    float:left;
+    text-align: center;
+    padding: 20px 0 ;
+    margin: auto;
+}
+
+body header div div img.logo {
+    background-color: white;
+    max-height: 50px;
+    max-width: 60px;
+}
+
+body header div nav {
+    margin: auto;
+    margin-right: 400px;
+    float: right;
+
+}
+
+body header div nav ul.menu {
+    list-style: none;
+    margin: auto;
+    padding: 36px 20px 0 20px;
+    display: table;
+}
+
+body header div nav ul li {
+    float: left;
+    margin: auto;
+    padding: 10px 10px 0 10px;
+}
+
+body header div nav ul li a {
+    font-size: 20px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+body header div nav ul li a:link, a:visited {
+    color: black;
+}
+
+body header div nav ul li a:hover, a:active {
+    background-color: black;
+    color: white;
+}
+
 
 * {
     box-sizing: border-box;
