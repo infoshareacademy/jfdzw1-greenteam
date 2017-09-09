@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 @import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     box-sizing: border-box;
 }
@@ -126,15 +127,33 @@ section > .container {
     text-transform: capitalize;
     font-size:15px;
 }
+.employees p {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #666;
+}
 
- a i {
-     background: #205D7A;
-     color: rgb(255, 255, 255);
-     border-radius: 5px;
-     height: 20px;
-     width: 20px;
-     text-align: center;
- }
+.fa-linkedin {
+    background: #205D7A;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.fa-github {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+a i{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
 
 .col-xs-3 {
     width: 33.33%;
