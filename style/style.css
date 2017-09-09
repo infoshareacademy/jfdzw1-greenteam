@@ -6,9 +6,11 @@
 
 body {
     background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-body header {
+header {
     position: fixed;
     width: 100%;
     top: 0;
