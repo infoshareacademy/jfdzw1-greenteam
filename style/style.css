@@ -1,15 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
-@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300i');
+
 * {
     box-sizing: border-box;
 }
 
 
 body {
-    background-color: whitesmoke;
+    background-color: #ecf0f1;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
     float: left;
     text-align: center;
     margin: 0 auto;
-    width: 100px;
+    width: 200px;
     height: 100px;
 }
 
@@ -113,7 +114,7 @@ section > .container {
     font-size:15px;
 }
 .employees p {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 24px;
     margin-top: 12px;
