@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 @import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
 
@@ -151,3 +152,6 @@ section > .container {
     }
 
     }
+=======
+#about-us{background:linear-gradient(#ffd53c,#4a3cff);opacity:.9;box-sizing:border-box;margin:0 auto;height:400px;font-family:Lato,sans-serif}#container{box-sizing:border-box;float:left;width:70%;padding:40px}#container #form{box-sizing:border-box}#container #form .input-class{border-radius:4px;margin:5px;padding:10px;border:none;font-family:Lato,sans-serif}#container #form #one{margin:10px auto;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between}#container #form #one textarea{width:46%;margin:0 auto;background:#ecf0f1;opacity:.8;height:3vh}#container #form #one textarea:focus{background:#ecf0f1;opacity:1}#container #form #two{display:flex;margin:2px auto}#container #form #two textarea{width:100%;background:#ecf0f1;opacity:.8;height:3vh}#container #form #two textarea:focus{background:#ecf0f1;opacity:1}#container #form #three{display:flex;margin:2px auto}#container #form #three textarea{width:100%;height:20vh;background:#ecf0f1;opacity:.8}#container #form #three textarea:focus{background:#ecf0f1;opacity:1}#container #buttons ul{padding-left:0;color:#ecf0f1}#container #buttons ul #l-button{background:#FFD53C;border:none;padding:8px;transition:background ease 1s}#container #buttons ul #l-button:hover{background:#2318B2;cursor:pointer}#container #buttons ul #r-button{background:#2318B2;border:none;padding:8px;transition:background ease 1s}#container #buttons ul #r-button:hover{background:#FFD53C;cursor:pointer}#container #buttons ul li{list-style:none;display:inline-block;margin:5px;padding:5px;border:1px solid #000;border-radius:5px;box-shadow:0 2px 0 0 #2318B2}#social-media{box-sizing:border-box;float:left;width:30%}#social-media ul{padding-left:10px}#social-media ul li{list-style:none;margin-top:40px}#social-media ul li a{text-decoration:none;color:#2318B2;transition:color ease 1s}#social-media ul li a:hover{color:#FFD53C}#social-media ul li i{margin-right:10px;transition:opacity ease 1s}#social-media ul li i:hover{opacity:.6}
+>>>>>>> develop
