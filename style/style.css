@@ -87,40 +87,25 @@ img {
 }
 
 section > .container {
-    margin: 20px auto;
+
     text-align: center;
+    background-color: #ecf0f1
 }
 
-.member1 {
+.employees {
+    background-color: #0088cc;
+}
+
+.member1,
+.member2,
+.member3,
+.member4{
     background-position: center center;
     width: 100px;
     height: 100px;
     margin: 0 auto;
     position: relative;
-}
-
-.member2 {
-    background-position: center center;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.member3 {
-    background-position: center center;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.member4 {
-    background-position: center center;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    position: relative;
+    margin-top: 15px;
 }
 
 .employees h3{
@@ -134,6 +119,10 @@ section > .container {
     margin-top: 12px;
     font-size: 13px;
     color: #666;
+    text-align: center;
+    padding-right: 5px;
+
+
 }
 
 .fa-linkedin {
@@ -148,10 +137,11 @@ section > .container {
     border-radius: 5px;
 }
 
-a i{
+a i {
     height: 20px;
     width: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 
