@@ -1,4 +1,4 @@
 let $inputs = $(".input-class");
-$(document).ready($("#l-button").click(function () {
+$(document).ready($("#reset-button").click(function () {
     $inputs.val("");
 }));

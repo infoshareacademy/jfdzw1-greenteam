@@ -11,6 +11,7 @@
 #container {
     box-sizing: border-box;
     float: left;
+    margin-top: 10%;
     width: 70%;
     padding: 40px;
 }
@@ -27,7 +28,7 @@
     font-family: Lato, sans-serif;
 }
 
-#container #form #one {
+#container #form #input-name-email {
     margin: 10px auto;
     display: flex;
     flex-direction: row;
@@ -35,7 +36,7 @@
     justify-content: space-between;
 }
 
-#container #form #one textarea {
+#container #form #input-name-email textarea {
     width: 46%;
     margin: 0 auto;
     background: #ecf0f1;
@@ -43,41 +44,41 @@
     height: 3vh;
 }
 
-#container #form #one textarea:focus {
+#container #form #input-name-email textarea:focus {
     background: #ecf0f1;
     opacity: 1;
 }
 
-#container #form #two {
+#container #form #input-subject {
     display: flex;
     margin: 2px auto;
 }
 
-#container #form #two textarea {
+#container #form #input-subject textarea {
     width: 100%;
     background: #ecf0f1;
     opacity: .8;
     height: 3vh;
 }
 
-#container #form #two textarea:focus {
+#container #form #input-subject textarea:focus {
     background: #ecf0f1;
     opacity: 1;
 }
 
-#container #form #three {
+#container #form #input-massage {
     display: flex;
     margin: 2px auto;
 }
 
-#container #form #three textarea {
+#container #form #input-massage textarea {
     width: 100%;
     height: 20vh;
     background: #ecf0f1;
     opacity: .8;
 }
 
-#container #form #three textarea:focus {
+#container #form #input-massage textarea:focus {
     background: #ecf0f1;
     opacity: 1;
 }
@@ -87,26 +88,26 @@
     color: #ecf0f1;
 }
 
-#container #buttons ul #l-button {
+#container #buttons ul #reset-button {
     background: #FFD53C;
     border: none;
     padding: 8px;
     transition: background ease 1s;
 }
 
-#container #buttons ul #l-button:hover {
+#container #buttons ul #reset-button:hover {
     background: #2318B2;
     cursor: pointer;
 }
 
-#container #buttons ul #r-button {
+#container #buttons ul #send-button {
     background: #2318B2;
     border: none;
     padding: 8px;
     transition: background ease 1s;
 }
 
-#container #buttons ul #r-button:hover {
+#container #buttons ul #send-button:hover {
     background: #FFD53C;
     cursor: pointer;
 }
@@ -123,6 +124,7 @@
 
 #social-media {
     box-sizing: border-box;
+    margin-top: 10%;
     float: left;
     width: 30%;
 }
