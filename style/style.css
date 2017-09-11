@@ -3,17 +3,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300i');
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
     background-color: #ecf0f1;
     margin: 0;
-    font-family: 'Lato', sans-serif;
+
 }
 
 header {
-    padding-bottom: 20px;
-    border-bottom: 1px solid gray;
+    padding-bottom: 0px;
+    width: 100%;
 }
 
 .logo {
@@ -24,9 +25,9 @@ header {
     height: 100px;
 }
 
-body header div nav {
+body header nav {
     margin: auto;
-    margin-right: 400px;
+    margin-right: 37%;
     float: right;
 }
 
@@ -60,6 +61,25 @@ a:active {
     color: white;
 }
 
+header .clear{
+    clear:both;
+}
+
+header .background-demo {
+    background-color:black;
+    color:whitesmoke;
+    min-height: 400px;
+    background-image: url("../img/wardrobe.jpeg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-header-text {
+    text-align: center;
+    padding: 100px;
+}
 .container {
     max-width: 1200px;
     margin: auto;
