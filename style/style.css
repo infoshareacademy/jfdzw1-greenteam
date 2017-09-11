@@ -1,3 +1,4 @@
+/*Style for section Newsletter*/
 #newsletter {
     background: linear-gradient(#ffd53c, #4a3cff);
     opacity: .9;
@@ -153,3 +154,4 @@
 #social-media ul li i:hover {
     opacity: .6;
 }
+/*End style for Newsletter*/
