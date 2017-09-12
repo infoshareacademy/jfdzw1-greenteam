@@ -94,6 +94,7 @@ header .clear{
     -moz-box-shadow: 14px 9px 32px -7px rgba(128,128,128,1);
     box-shadow: 14px 9px 32px -7px rgba(128,128,128,1);
     text-align: center;
+<<<<<<< HEAD
 }
 
 .hero-header-button a {
@@ -101,6 +102,15 @@ header .clear{
     text-decoration: none;
 }
 
+=======
+}
+
+.hero-header-button a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+>>>>>>> refs/remotes/origin/develop
 .container {
     max-width: 1200px;
     margin: auto;
@@ -456,57 +466,3 @@ a i {
 }
 
     /*footer*/
-.footer-box{
-    clear: both;
-
-    font-size: 25px;
-;
-}
-
-.footer-box nav{font-size: 18px;
-    text-align: center;
-    font-family: 'Lato', sans-serif; ;
-    color: #000000;
-}
-.part1 {width: 300px}
-<<<<<<< HEAD
-. footer-box ul {
-=======
-footer ul {
->>>>>>> a401befb63cef76eb87e8ba76a90669b1ff4dc3b
-    background: #4A3CFF;
-
-    float: right;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.footer-box li a {
-    float: left;
-    font-size: 12px;
-    text-align: center;
-    width: 150px;
-    height: 18px;
-    padding: 15px 12px 8px 12px ;
-    color: #000000;
-    margin: 10px;
-
-}
-
- .box-api h2{text-align: center;
-     font-weight: bold;
-    color: #000000;
-    letter-spacing: 2px;
-   }
- .box-api p{
-     text-align: center;
-     color: #000000;}
-
-.text box p {
-
-    margin:20px 30px 10px 100px;
-}
-
-
