@@ -26,7 +26,7 @@ header {
     height: 100px;
 }
 
-body header nav {
+header nav {
     margin: auto;
     margin-right: 37%;
     float: right;
@@ -51,13 +51,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:link,
-a:visited {
+nav ul li a:link, a:visited {
     color: black;
 }
 
-nav ul li a:hover,
-a:active {
+nav ul li a:hover, a:active {
     background-color: black;
     color: white;
 }
@@ -66,7 +64,7 @@ header .clear{
     clear:both;
 }
 
-header .background-demo {
+.hero-header-background {
     background-color:black;
     color:whitesmoke;
     min-height: 400px;
@@ -79,8 +77,30 @@ header .background-demo {
 
 .hero-header-text {
     text-align: center;
-    padding: 100px;
+    padding: 50px;
+    text-shadow: 1px 2px 2px grey;
+    line-height: 1,5;
+    text-decoration: none;
+    text-indent: 30px;
 }
+
+.hero-header-button {
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 14px 9px 32px -7px whitesmoke;
+    -moz-box-shadow: 14px 9px 32px -7px rgba(128,128,128,1);
+    box-shadow: 14px 9px 32px -7px rgba(128,128,128,1);
+    text-align: center;
+}
+
+.hero-header-button a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -438,7 +458,7 @@ nav{font-size: 18px;
     color: white;
 }
 .part1 {width: 300px}
-ul {
+footer ul {
     background: #4A3CFF;
     color: #ecf0f1;
     float: right;
