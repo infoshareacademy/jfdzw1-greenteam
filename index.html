@@ -1,75 +1,179 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="#"/>
     <meta name="keywords" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>###</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontello/css/fontello.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Outfits by weather</title>
 </head>
 <body>
-        <!-- Header-->
-    <header>
-        <!-- Header-->
-
-        <div>
-            <!-- Logo-->
+<!-- Header-->
+<header>
+    <!-- main header-->
+    <div class="main-header">
+    <!-- LOGO-->
+        <div class="logo">
+            <a href="#hero-header">
+                <img class="logo" src="img/logo.jpg" alt="logo outfits by weather" />
+            </a>
         </div>
-
+        <!-- MENU -->
         <nav>
-            <!-- Menu-->
+            <ul class="menu">
+                <li><a href="#hero-header">Start</a></li>
+                <li><a href="#about-api">Outfits by weather</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
         </nav>
+    </div>
+    <div class="clear"></div>
+    <!-- hero header -->
+    <div class="hero-header-background" id="hero-header" >
+        <div class="hero-header-text">
+            <h1>Outfits by weather</h1>
+            <h3>Is it posible to check weather and explore fashion news</h3>
+            <h3>Maybe it is a way to select your outfit by weather</h3>
+        </div>
+        <div class="hero-header-button">
+           <a href="#about-api">Let's find out</a>
+        </div>
+    </div>
+</header>
 
-    </header>
+<!-- Main-->
+<main>
 
-        <!-- Main-->
-    <main>
+    <!-- All About API-->
+    <section class="api" id="about-api">
+        <div class="box-api">
+                <h2>Sunny day or rainy morning ?</h2>
+                <p> Let's check our app and find your fashion inspiration</p>
+        </div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+    </section>
+<!-->
 
-        <section>
-            <!-- About API-->
-        </section>
-
-            <!--ABOUT US-->
-        <section class="employees">
-            <div class="container">
-                <div class="row">
-                    <div class="col-3 col-s-6 col-m-3 col-lg-3">
-                        <div class="member1"><a href="https://ibb.co/hYgTya"><img src="https://thumb.ibb.co/hYgTya/19756915_1631951190148855_1128109478540316671_n.jpg" alt="19756915_1631951190148855_1128109478540316671_n"></a></div>
-                        <h3>anna jagiela</h3>
-                        <a href="https://www.linkedin.com/in/anna-jagie%C5%82a-344676107/"><i class="fa fa-linkedin"></i></a>
-                    </div>
-
-                    <div class="col-3 col-s-6 col-m-3 col-lg-3">
-                        <div class="member2"><a href="https://ibb.co/nFpu6v"><img src="https://thumb.ibb.co/nFpu6v/wn.jpg" alt="wn"></a></div>
-                        <h3>wojciech najda</h3>
-                        <a href="https://www.linkedin.com/in/wojciech-najda-99aa5188/"><i class="fa fa-linkedin"></i></a>
-                    </div>
-
-                    <div class="col-3 col-s-6 col-m-3 col-lg-3">
-                        <div class="member3"> </div>
-                        <h3>daria mirowska</h3>
-                        <a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                    </div>
-
-                    <div class="col-3 col-s-6 col-m-3 col-lg-3">
-                        <div class="member4"></div>
-                        <h3>agnieszka Chróścielewska</h3>
-                        <a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                    </div>
+    <!--   SECTION MORE INFORMATION ABOUT PRODUCS-->
+    <section class="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-m-6 col-lg-6">
+                    <h4>#weather and #clothes</h4>
+                    <p> #Current weather details<br>
+                        #Visual forecasts for today, tonight and tomorrow<br>
+                        #Hourly forecasts for the next 24 hours<br>
+                        #Daily forecasts for the next 5 days<br>
+                        #Hundreds of fashionable weather-smart clothing ideas, with full Today Notification Widget
+                        support<br>
+                        #Mix and match as you please
+                    </p>
+                 </div>
+                <div class="col-6 col-m-6 col-lg-6">
+                    <img class="feature-image" src="img/dribbbbleeeeee.jpg">
                 </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Team -->
+    <section class="employees" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-s-6 col-m-3 col-lg-3">
+                    <div class="member1"><a href="https://ibb.co/hYgTya"><img src="https://thumb.ibb.co/hYgTya/19756915_1631951190148855_1128109478540316671_n.jpg" alt="19756915_1631951190148855_1128109478540316671_n"></a></div>
+                    <h3>anna jagieła</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+                    <a href="https://www.linkedin.com/in/anna-jagie%C5%82a-344676107/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/annajag" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-3 col-s-6 col-m-3 col-lg-3">
+                    <div class="member2"><a href="https://ibb.co/nFpu6v"><img src="https://thumb.ibb.co/nFpu6v/wn.jpg" alt="wn"></a></div>
+                    <h3>wojciech najda</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+                    <a href="https://www.linkedin.com/in/wojciech-najda-99aa5188/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/wojtexnaj" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-3 col-s-6 col-m-3 col-lg-3">
+                    <div class="member3"> </div>
+                    <h3>daria mirowska</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+                    <a href="https://www.linkedin.com/in/daria-mirowska-4ba593103/?ppe=1" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/MirowskaDaria" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-3 col-s-6 col-m-3 col-lg-3">
+                    <div class="member4"></div>
+                    <h3>agnieszka Chróścielewska</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+                    <a href="https://www.linkedin.com/in/agnieszka-chr%C3%B3%C5%9Bcielewska-366a63a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/achroscielewska" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter-->
+    <section id="newsletter">
+            <div id="container">
+               <h1>Dołącz do nas! Poznaj możliwości naszej aplikacji! Premiera niebawem!</h1>
+                <div id="form">
+                        <div id="input-name-email">
+                            <input class="input-class" type="text" name="Name" placeholder="Name*">
+                            <input class="input-class" type="text" name="Email" placeholder="Mail*">
+                            <div style="clear: both"></div>
+                        </div>
+                        <div id="input-subject">
+                            <input class="input-class" type="text" name="Subject" placeholder="Subject*">
+                        </div>
+                        <div id="input-massage">
+                            <textarea class="input-class" name="Massage" placeholder="Massage*"></textarea>
+                        </div>
+                </div>
+                <div id="buttons">
+                    <ul>
+                        <li id="reset-button"><i class="demo-icon icon-cancel"></i>Clear Form</li>
+                        <li id="send-button"><i class="demo-icon icon-export-alt"></i>Send Massage</li>
+                    </ul>
+                </div>
+                <p>Zapisz się na newsletter*</p>
+                <p>*Otrzymasz tylko jedną wiadomość na maila z informacją o premierze naszej aplikacji. Gwarantujemy bezpieczeństwo Twoich danych osobowych.</p>
+                <h1>Dołącz do nas! Poznaj możliwości naszej aplikacji! Premiera niebawem!</h1>
+                <hr/>
+            </div>
+            <div id="social-media">
+                <ul>
+                    <li><i class="demo-icon icon-address-card"></i> Lorem ipsum dolor sit amet.</li>
+                    <li><i class="demo-icon icon-mobile"></i> 666-666-666</li>
+                    <li><i class="demo-icon icon-mail"></i> <a href="#"> green-team@gmail.com</a></li>
+                    <li><i class="demo-icon icon-facebook-squared"></i><a href="#"> www.facebook.com</a></li>
+                    <li><i class="demo-icon icon-twitter"></i><a href="#"> www.twitter.com.</a></li>
+                </ul>
+                
             </div>
         </section>
 
-        <section>
-            <!-- Newsletter-->
-        </section>
-    </main>
-    s
-    <footer>
-        <!-- Footer-->
-    </footer>
+</main>
 
+<!-- Footer-->
+<footer>
+
+
+</footer>
+<script src="script/JavaScript.js"></script>
 </body>
 </html>

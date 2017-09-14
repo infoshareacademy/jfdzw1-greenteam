@@ -1,1 +1,0 @@
-# jfdzw1-valor
