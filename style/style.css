@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
 }
 
@@ -35,8 +35,7 @@ header {
 }
 
 header nav {
-    margin: auto;
-    margin-right: 37%;
+    margin: auto 37% auto auto;
     float: right;
 }
 
@@ -73,7 +72,7 @@ header .clear{
 }
 
 .hero-header-background {
-    background-color:#000000;
+    background-color: #000000;
     margin-top: 100px;
     color:whitesmoke;
     min-height: 400px;
@@ -110,8 +109,6 @@ header .clear{
     text-decoration: none;
 }
 
-
->>>>>>> refs/remotes/origin/develop
 .container {
     max-width: 1200px;
     margin: auto;
@@ -135,6 +132,31 @@ img {
     max-width: 100%;
 }
 
+/*SEKCJA ANIA */
+
+.feature{
+    width: 100%;
+    position: relative;
+}
+
+.feature h4 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top : 30px;
+}
+
+.feature p{
+
+}
+
+.feature-image {
+    margin-right: 0;
+    /*why obrazek nie dochodzi do prawej lini*/
+}
+
+/*finish SEKCJA ANIA */
+
 section>.container {
     text-align: center;
     background-color: #ecf0f1
@@ -151,9 +173,8 @@ section>.container {
     background-position: center center;
     width: 100px;
     height: 100px;
-    margin: 0 auto;
     position: relative;
-    margin-top: 15px;
+    margin: 15px auto 0;
 }
 
 .employees h3 {
@@ -199,7 +220,7 @@ a i {
     width: 66.66%;
 }
 
-@media (min-width:1200px)
+@media (min-width:1200px){
     .col-lg-1 {
         width: 8.33%;
     }
@@ -240,13 +261,16 @@ a i {
         max-width: 1200px;
         width: 100%;
     }
+
     .employees h3 {
         font-size: 16px;
     }
+
     .member1,
     .member2,
     .member3,
-    .member4 {
+    .member4
+    {
         height: 150px;
         width: 150px;
     }
@@ -331,8 +355,8 @@ a i {
     #container #form #input-subject input {
         width: 100%;
         padding: 15px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         background: #ecf0f1;
         opacity: .8;
         height: 3vh;
@@ -420,7 +444,7 @@ a i {
         transform: rotateY(360deg)
     }
     /*End style for Newsletter*/
-=======
+]
 
 
     /*Style for section About App*/
@@ -432,6 +456,7 @@ a i {
         clear:both;
         color:#2318B2;
     }
+
     .box1 {
         float: left;
         background-color: #ecf0f1;
@@ -439,10 +464,11 @@ a i {
         border-radius: 5px;
         width: 250px;
         margin:3% 3% 3% 15%;
-        padding:2%;
+        padding: 2%;
         height: 200px;
         box-shadow: 10px 10px 5px #888888;
     }
+
     .box2 {
         float: left;
         background-color: #ecf0f1;
@@ -454,6 +480,7 @@ a i {
         height: 200px;
         box-shadow: 10px 10px 5px #888888;
     }
+
     .box3 {
         background-color:#ecf0f1;
         float: left;
@@ -464,6 +491,6 @@ a i {
         margin:3%;
         padding:2%;
         box-shadow: 10px 10px 5px #888888;
-}
+    }}
 
     /*footer*/
