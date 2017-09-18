@@ -1,8 +1,10 @@
 
-.icon-mail:before { content: '\e800'; } /* '' */
-.icon-mobile:before { content: '\e801'; } /* '' */
-.icon-cancel:before { content: '\e802'; } /* '' */
-.icon-export-alt:before { content: '\f14d'; } /* '' */
+.icon-mobile:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-home-outline:before { content: '\e802'; } /* '' */
+.icon-right-big:before { content: '\e803'; } /* '' */
+.icon-info-circled:before { content: '\e804'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-address-card:before { content: '\f2bb'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
-.icon-facebook-squared:before { content: '\f30e'; } /* '' */
