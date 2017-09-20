@@ -3,18 +3,31 @@
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
+  "units_per_em": 1000,
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "47bd87a650e95b97f947d275ed968efe",
-      "css": "facebook-squared",
-      "code": 62222,
-      "src": "entypo"
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
+      "code": 59393,
+      "src": "fontawesome"
     },
     {
-      "uid": "79d27b578931fd441a6dc885c9dd88a6",
-      "css": "address-card",
-      "code": 62139,
+      "uid": "a42f298da5c64e646a5d532724cd6e15",
+      "css": "home-outline",
+      "code": 59394,
+      "src": "typicons"
+    },
+    {
+      "uid": "ad6b3fbb5324abe71a9c0b6609cbb9f1",
+      "css": "right-big",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
       "src": "fontawesome"
     },
     {
@@ -24,27 +37,27 @@
       "src": "entypo"
     },
     {
-      "uid": "e335adbc2d898c7d85d40c507796e7b4",
-      "css": "mail",
-      "code": 59392,
-      "src": "entypo"
+      "uid": "79d27b578931fd441a6dc885c9dd88a6",
+      "css": "address-card",
+      "code": 62139,
+      "src": "fontawesome"
     },
     {
       "uid": "767fede84586366cd7d6c835be745454",
       "css": "mobile",
-      "code": 59393,
+      "code": 59392,
       "src": "entypo"
     },
     {
-      "uid": "5211af474d3a9848f67f945e2ccaf143",
-      "css": "cancel",
-      "code": 59394,
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-circled",
+      "code": 61595,
       "src": "fontawesome"
     },
     {
-      "uid": "13b9eebfea581ad8e756ee7a18a7cba8",
-      "css": "export-alt",
-      "code": 61773,
+      "uid": "e82cedfa1d5f15b00c5a81c9bd731ea2",
+      "css": "info-circled",
+      "code": 59396,
       "src": "fontawesome"
     }
   ]
