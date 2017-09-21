@@ -75,6 +75,7 @@ header .clear{
     background-image: url("../img/wardrobe.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .hero-header-text {
