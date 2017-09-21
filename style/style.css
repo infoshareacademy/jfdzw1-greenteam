@@ -71,27 +71,27 @@ header .clear{
 }
 
 .hero-header-background {
-    background-color: #000000;
-    margin-top: 100px;
+    position: relative;
     color:whitesmoke;
-    min-height: 400px;
+    height: 50vh;
     background-image: url("../img/wardrobe.jpeg");
-    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 
 .hero-header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 50px;
     text-shadow: 1px 2px 2px #808080;
-    line-height: 1,5;
+    line-height: 1.5;
     text-decoration: none;
-    text-indent: 30px;
 }
 
 .hero-header-button {
+    position: relative;
     margin: auto;
     width: 300px;
     height: 80px;
@@ -477,7 +477,7 @@ a i {
         height: 100%;
         width: 600px;
         margin: 10px 10px 10px 250px;
-        padding:0px;
+        padding: 0;
         list-style: none;
     }
 
@@ -491,10 +491,11 @@ a i {
         margin-top:30px;
         background: #58a7b4;
     }
-.law{
+.law {
     height: 100px;
     width: 100%;
-    background:#58a7b4;
+    background: #58a7b4;
+}
 
 .law h2{
     display:block;
