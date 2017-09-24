@@ -125,8 +125,13 @@ header .clear{
     text-decoration: none;
 }
 
+.hero-header-button a:hover, a:active {
+    font-weight: bold;
+}
+
 
 /*END - header hero-header */
+
 
 .container {
     max-width: 1200px;
