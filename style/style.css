@@ -9,8 +9,10 @@
 body {
     background-color: #ecf0f1;
     margin: 0;
-
+    color: #000000;
+    font-size:16px;
 }
+
 
 /*header logo menu */
 header {
@@ -39,11 +41,10 @@ header nav {
 
 nav ul.menu {
     list-style-type: none;
-    max-width: 30%;
     margin: 0 auto;
     padding-top: 30px;
     padding-left: 0;
-    max-width: 42%;
+    max-width: 45%;
 }
 
 nav ul li {
@@ -53,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 20px;
+    font-size: 1.5em;
     letter-spacing: 1.5px;
     padding: 10px;
     text-decoration: none;
@@ -95,20 +96,16 @@ header .clear{
     text-decoration: none;
 }
 
-.hero-header-text h1 {
-    font-size: 50px;
+.hero-header-text p {
+    font-size: 1.8em;
     letter-spacing: 3px;
 }
 
-.hero-header-text h3 {
-    font-size: 30px;
-    letter-spacing: 3px;
-}
 
 .hero-header-button {
     position: relative;
     margin: auto;
-    width: 300px;
+    max-width: 35%;
     height: 80px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -116,13 +113,12 @@ header .clear{
     -moz-box-shadow: 14px 9px 32px -7px #808080;
     box-shadow: 14px 9px 32px -7px #808080;
     border: 1px solid #ffffff;
-    background-color: #ffffff;
     opacity: 0.74;
     text-align: center;
 }
 
 .hero-header-button a:link, a:visited {
-    font-size: 20px;
+    font-size: 1.4em;
     letter-spacing: 1.5px;
     text-decoration: none;
 }
@@ -166,7 +162,7 @@ img {
 }
 
 .feature h4 {
-    font-size: 20px;
+    font-size: 1.5em;
     text-align: center;
     padding-bottom: 50px;
     padding-top : 30px;
@@ -205,7 +201,6 @@ section>.container {
 
 .employees h3 {
     text-transform: capitalize;
-    font-size: 15px;
 }
 
 .employees p {
@@ -213,7 +208,7 @@ section>.container {
     font-weight: 300;
     line-height: 24px;
     margin-top: 12px;
-    font-size: 13px;
+    font-size: 0.8em;
     color: #666;
     text-align: center;
     padding-right: 5px;
@@ -289,7 +284,6 @@ a i {
     }
 
     .employees h3 {
-        font-size: 16px;
     }
 
     .member1,
@@ -301,10 +295,6 @@ a i {
         width: 150px;
     }
 }
-   
-
-
-
     /*Style for section About App*/
 
     .api{
@@ -312,11 +302,9 @@ a i {
     }
     .box-api{
         background-color:#ecf0f1;
-        font-size:16px;
         content:'';
         display:block;
         clear: both;
-        color:#2318B2;
         margin: 150px auto 0 auto;
         height: 100%;
 
@@ -403,7 +391,7 @@ a i {
     padding: 40px;
 }
 #box h1 {
-    font-size: 30px;
+    font-size: 2em;
     position: absolute;
     top: -15%;
     left: 5%;
@@ -437,7 +425,7 @@ a i {
     height: 60px;
     border: 3px #000000 solid;
     border-right: none;
-    font-size: 24px;
+    font-size: 1.8em;
     opacity: 0.8;
 }
 #wrap form input:focus
@@ -455,7 +443,6 @@ a i {
     height: 60px;
     border: 3px black solid;
     background-color: #ecf0f1;
-    font-size: 22px;
     cursor: pointer;
 }
 #wrap form button:hover
@@ -466,7 +453,7 @@ a i {
 
 #box p:nth-of-type(1) {
     color: #FFD53C;
-    font-size: 24px;
+    font-size: 1.8em;
     text-align: center;
     display: block;
     position: absolute;
@@ -476,7 +463,7 @@ a i {
     letter-spacing: 1px;
 }
 .newsletter p {
-    font-size: 10px;
+    font-size: 0.6em;
     position: absolute;
     bottom: 10px;
 }
@@ -549,7 +536,7 @@ a i {
         display: block;
         float: right;
         text-align: center;
-        font-size: 12px;
+        font-size: 0.8em;
         width: 100px;
         text-decoration: none;
         margin-top:30px;
@@ -566,6 +553,5 @@ a i {
     text-align: center;
     margin: 10px ;
     padding: 20px;
-    font-size: 16px;
 }
   
