@@ -296,40 +296,64 @@ a i {
     }
     .box-api h2{
 
-        text-align: center;
-        letter-spacing: 5px;
-    }
-    .box-api p {
-        text-align: center;
-    }
-    .boxes{
-        height: 300px;
-        width: 1200px;
-        margin:20px auto;
-    }
+    text-align: center;
+    letter-spacing: 5px;
 
-    .box1,
-    .box2,
-    .box3,
-    .box4{
-        float: left;
-        background-color: #ecf0f1;
-        border: 2px solid #000000;
-        border-radius: 5px;
-        width: 200px;
-        margin:3% 3% 3% 3%;
-        padding:2%;
-        height: 200px;
-        box-shadow: 10px 10px 5px #888888;
-    }
-    .clear
-    {
-        clear: both;
-    }
-    .box-api p {
-        text-align: center;
-    }
-  
+}
+.box-api h3{
+    text-align: center;
+}
+
+.box-api p {
+
+    text-align: center;
+    padding: 5px;
+
+}
+
+.boxes{
+
+    height: 300px;
+    width: 1600px;
+    margin:20px auto;
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+
+    float: left;
+    background-color: #ecf0f1;
+    border: 2px solid #D3D3D3;
+    border-radius: 1px;
+    width: 300px;
+    margin:3% 3% 3% 3%;
+    height: 200px;
+
+
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    background-color:#58a7b4 ;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: -35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear
+
+{
+
+    clear: both;
+
+}
+
 
 
  /*Style for section Newsletter*/
