@@ -35,11 +35,11 @@ header {
 
 header nav {
     margin: auto;
-
 }
 
 nav ul.menu {
     list-style-type: none;
+    max-width: 30%;
     margin: 0 auto;
     padding-top: 30px;
     padding-left: 0;
@@ -48,6 +48,7 @@ nav ul.menu {
 
 nav ul li {
     float: left;
+    margin: auto;
     padding: 10px 10px 0 10px;
 }
 
