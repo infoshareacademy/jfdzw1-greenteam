@@ -382,7 +382,7 @@ a i {
     text-align: left;
     background-color: #ecf0f1;
     padding-left: 20px;
-    width: 500px;
+    width: 30vw;
     height: 60px;
     border: 3px #000000 solid;
     border-right: none;
@@ -456,6 +456,7 @@ a i {
 }
 #social-media ul li a:hover {
     color: #FFD53C;
+    cursor: pointer;
 }
 #social-media ul li i {
     margin-right: 10px;
