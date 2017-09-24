@@ -34,23 +34,25 @@ header {
 
 header nav {
     margin: auto;
+
 }
 
 nav ul.menu {
     list-style-type: none;
-    max-width: 30%;
     margin: 0 auto;
     padding-top: 30px;
+    padding-left: 0;
+    max-width: 42%;
 }
 
 nav ul li {
     float: left;
-    margin: auto;
     padding: 10px 10px 0 10px;
 }
 
 nav ul li a {
     font-size: 20px;
+    letter-spacing: 3px;
     padding: 4px;
     text-decoration: none;
 }
@@ -71,7 +73,7 @@ header .clear{
 .hero-header-background {
     position: relative;
     color:whitesmoke;
-    height: 50vh;
+    height: 100vh;
     background-image: url("../img/wardrobe.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
