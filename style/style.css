@@ -133,6 +133,7 @@ img {
 /*SEKCJA ANIA */
 
 .feature{
+    height: 50vh;
     width: 100%;
     position: relative;
 }
@@ -278,6 +279,10 @@ a i {
 
 
     /*Style for section About App*/
+
+    .api{
+        height: 50vh;
+    }
     .box-api{
         background-color:#ecf0f1;
         font-size:16px;
@@ -285,7 +290,7 @@ a i {
         display:block;
         clear: both;
         color:#2318B2;
-        width:1200px;
+        margin: 0 auto;
         height: 100%;
 
     }
@@ -298,9 +303,9 @@ a i {
         text-align: center;
     }
     .boxes{
-    height: 300px;
-    width: 1200px;
-    margin:20px 50px 20px 150px;
+        height: 300px;
+        width: 1200px;
+        margin:20px auto;
     }
 
     .box1,
@@ -317,7 +322,10 @@ a i {
         height: 200px;
         box-shadow: 10px 10px 5px #888888;
     }
-
+    .clear
+    {
+        clear: both;
+    }
     .box-api p {
         text-align: center;
     }
@@ -327,10 +335,11 @@ a i {
  /*Style for section Newsletter*/
 #newsletter {
     background: linear-gradient(#ffd53c, #4a3cff);
+    background: url("../img/pen-2695348_1920.jpg");
     opacity: .9;
     box-sizing: border-box;
     margin: 0 auto;
-    height: 100vh;
+    height: 70vh;
     font-family: Lato, sans-serif;
     position: relative;
 }
@@ -463,6 +472,7 @@ a i {
 /*footer*/
     footer{
         display: block;
+        height: 30vh;
     }
 
     .footer-box{
@@ -477,6 +487,9 @@ a i {
         width: 600px;
         margin: 10px 10px 10px 250px;
         padding: 0;
+    }
+    .photo ul li
+    {
         list-style: none;
     }
 
