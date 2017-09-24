@@ -12,6 +12,7 @@ body {
 
 }
 
+/*header logo menu */
 header {
     padding-bottom: 0;
 
@@ -52,8 +53,8 @@ nav ul li {
 
 nav ul li a {
     font-size: 20px;
-    letter-spacing: 3px;
-    padding: 4px;
+    letter-spacing: 1.5px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -63,13 +64,15 @@ nav ul li a:link, a:visited {
 
 nav ul li a:hover, a:active {
     background-color: #000000;
-    color: white;
+    color: #ffffff;
 }
 
 header .clear{
     clear:both;
 }
+/*END - header logo menu */
 
+/*header hero-header */
 .hero-header-background {
     position: relative;
     color:whitesmoke;
@@ -91,23 +94,39 @@ header .clear{
     text-decoration: none;
 }
 
+.hero-header-text h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.hero-header-text h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
 .hero-header-button {
     position: relative;
     margin: auto;
     width: 300px;
     height: 80px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 15px;
     -webkit-box-shadow: 14px 9px 32px -7px #ecf0f1;
     -moz-box-shadow: 14px 9px 32px -7px #808080;
     box-shadow: 14px 9px 32px -7px #808080;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.74;
     text-align: center;
 }
 
-.hero-header-button a {
+.hero-header-button a:link, a:visited {
     font-size: 20px;
+    letter-spacing: 1.5px;
     text-decoration: none;
 }
+
+
+/*END - header hero-header */
 
 .container {
     max-width: 1200px;
