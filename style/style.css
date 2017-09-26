@@ -54,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 1.5em;
+    font-size: 1.4em;
     letter-spacing: 1.5px;
     padding: 10px;
     text-decoration: none;
@@ -361,19 +361,13 @@ a i {
     margin-right: auto;
 }
 
-.clear
-
-{
-
+.clear {
     clear: both;
-
 }
-
-
 
  /*Style for section Newsletter*/
 .newsletter {
-    background: linear-gradient(#ffd53c, #4a3cff);
+    /* background: linear-gradient(#ffd53c, #4a3cff); */
     background: url("../img/pen-2695348_1920.jpg");
     opacity: .9;
     box-sizing: border-box;
@@ -401,12 +395,12 @@ a i {
     letter-spacing: 1px;
 }
 
-#box wrap
+/* #box wrap
 {
     width: 100%;
     height: 200px;
     padding: 20px;
-}
+} */
 #wrap form
 {
     width: 100%;
