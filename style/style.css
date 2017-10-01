@@ -49,7 +49,6 @@ nav ul.menu {
 
 nav ul li {
     float: left;
-    margin: auto;
     padding: 10px 10px 0 10px;
 }
 
@@ -94,6 +93,11 @@ header .clear{
     text-shadow: 1px 2px 2px #808080;
     line-height: 1.5;
     text-decoration: none;
+}
+
+.hero-header-text h1 {
+    font-size: 4em;
+    letter-spacing: 3px;
 }
 
 .hero-header-text p {
