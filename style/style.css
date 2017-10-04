@@ -79,11 +79,11 @@ nav ul li a {
     transition: all 1s linear;
 }
 
-nav ul li a:link, a:visited {
+nav ul li a.link-menu:link, a.link-menu:visited {
     color: #000000;
 }
 
-nav ul li a:hover, a:active {
+nav ul li a.link-menu:hover, a.link-menu:active {
     background-color: #000000;
     border-radius: 20px;
     border: 1px solid #000000;
@@ -131,18 +131,17 @@ nav ul li a:hover, a:active {
     border-radius: 20px;
     opacity: 0.74;
     text-align: center;
-    color: #58a7b4;
 }
 
 a.hero-header-text {
     text-decoration: none;
+    color: #000000;
 }
 
 
 .hero-header-button:hover {
     font-weight: bold;
     background-color: #58a7b4;
-    color: #000000;
     transition: all 2s;
 }
 
