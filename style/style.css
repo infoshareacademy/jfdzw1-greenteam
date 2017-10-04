@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Lato:100i,400');
 @import url('https://fonts.googleapis.com/css?family=Lato:300i');
+
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -193,21 +194,38 @@ img {
 
 /*SECTION TEAM*/
 
-.employees {
-    width: 100%;
-    padding-top: 200px;
+#team {
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
+
 .member1,
 .member2,
 .member3,
 .member4 {
-    background-position: center center;
+    background-position: center;
     width: 100px;
     height: 100px;
     position: relative;
     margin: 15px auto 0;
     padding-right: 10px;
 }
+
+
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 
 .employees h3 {
     text-transform: capitalize;
@@ -291,6 +309,7 @@ a i {
     section>.container {
         max-width: 1200px;
         width: 100%;
+        padding-top: 60px;
     }
 
     .employees h3 {
