@@ -94,60 +94,56 @@ nav ul li a:hover, a:active {
 
 /*header hero-header */
 .hero-header-background {
-    position: relative;
     color:whitesmoke;
     height: 100vh;
     background-image: url("../img/wardrobe.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 4s;
 }
 
 .hero-header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
-    text-shadow: 1px 2px 2px #808080;
     line-height: 1.5;
     text-decoration: none;
 }
 
 .hero-header-text h1 {
-    font-size: 4em;
+    font-size: 2em;
     letter-spacing: 3px;
 }
 
-.hero-header-text p {
-    font-size: 1.8em;
+.hero-header-text {
+    font-size: 1.5em;
     letter-spacing: 3px;
 }
-
 
 .hero-header-button {
-    position: relative;
-    margin: auto;
-    max-width: 35%;
-    height: 80px;
+    margin: 0 auto;
+    padding: 10px 30px;
     background-color: #ffffff;
-    border-radius: 10px;
-    -webkit-box-shadow: 14px 9px 32px -7px #ecf0f1;
-    -moz-box-shadow: 14px 9px 32px -7px #808080;
-    box-shadow: 14px 9px 32px -7px #808080;
-    border: 1px solid #ffffff;
+    border: 1px solid #58a7b4;
+    border-radius: 20px;
     opacity: 0.74;
     text-align: center;
+    color: #58a7b4;
 }
 
-.hero-header-button a:link, a:visited {
-    font-size: 1.4em;
-    letter-spacing: 1.5px;
+a.hero-header-text {
     text-decoration: none;
 }
 
-.hero-header-button a:hover, a:active {
+
+.hero-header-button:hover {
     font-weight: bold;
+    background-color: #58a7b4;
+    color: #000000;
+    transition: all 2s;
 }
 
 /*END - header hero-header */
@@ -200,7 +196,6 @@ img {
 
 .employees {
     width: 100%;
-    height: 100vh;
     padding-top: 200px;
 }
 .member1,
