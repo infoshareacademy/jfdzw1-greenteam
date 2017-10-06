@@ -328,10 +328,11 @@ a i {
 /*END SECTION TEAM*/
 
 /*Style for section About App*/
-
+.api{padding-top: 80px;
+}
 .box-api {
     background-color: #ecf0f1;
-    margin: 150px auto 0 auto;
+
 }
 
 .box-api h2 {
@@ -348,8 +349,9 @@ a i {
     padding: 5px;
 }
 
-.boxes {
-    margin:20px auto;
+.boxes-row {
+    margin:80px 0 0 150px;
+    padding:20px auto;
 }
 
 .box1,
@@ -360,9 +362,6 @@ a i {
     background-color: #ecf0f1;
     border: 2px solid #D3D3D3;
     border-radius: 1px;
-    width: 300px;
-    margin:3% 3% 3% 3%;
-    height: 200px;
 }
 
 .icon {
@@ -370,8 +369,6 @@ a i {
     height: 80px;
     background-color:#58a7b4 ;
     border-radius: 100%;
-    text-align: center;
-    position: relative;
     margin-top: -35px;
     margin-left: auto;
     margin-right: auto;
@@ -516,9 +513,8 @@ footer {
 
 .photo ul {
     height: 100%;
-    width: 600px;
     margin: 10px 10px 10px 250px;
-    padding: 0;
+
 }
 
 .photo ul li {
@@ -533,7 +529,6 @@ footer {
     font-size: 0.8em;
     width: 100px;
     text-decoration: none;
-    margin-top: 30px;
     background: #58a7b4;
 }
 .law {
@@ -542,7 +537,7 @@ footer {
     background: #58a7b4;
 }
 
-.law h2{
+.law p{
     display:block;
     text-align: center;
     margin: 10px ;
