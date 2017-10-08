@@ -211,8 +211,6 @@ img {
     padding-right: 10px;
 }
 
-
-
 .hovereffect img {
     display: block;
     position: relative;
@@ -225,7 +223,6 @@ img {
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
-
 
 .employees h3 {
     text-transform: capitalize;
