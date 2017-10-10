@@ -76,6 +76,7 @@ nav ul li {
 nav ul li a {
     font-size: 1.4em;
     padding: 10px;
+    border-radius: 20px;
     text-decoration: none;
     transition: all 1s linear;
 }
@@ -86,7 +87,6 @@ nav ul li a.link-menu:link, a.link-menu:visited {
 
 nav ul li a.link-menu:hover, a.link-menu:active {
     background-color: #000000;
-    border-radius: 20px;
     border: 1px solid #000000;
     color: #ffffff;
 }
@@ -132,6 +132,7 @@ nav ul li a.link-menu:hover, a.link-menu:active {
     border-radius: 20px;
     opacity: 0.74;
     text-align: center;
+    width: 18%;
 }
 
 a.hero-header-text {
@@ -139,13 +140,11 @@ a.hero-header-text {
     color: #000000;
 }
 
-
 .hero-header-button:hover {
     font-weight: bold;
     background-color: #58a7b4;
     transition: all 2s;
 }
-
 /*END - header hero-header */
 
 
