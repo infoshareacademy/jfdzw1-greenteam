@@ -32,25 +32,26 @@ let weatherWidget = {
                     dataType: 'json'
                 }).done(function (data) {
                     console.log(data);
-                    var temp = Math.floor((data.main.temp - 273.15) * 100 / 100);
+                    let temp = Math.floor((data.main.temp - 273.15) * 100 / 100);
                     tempWidget.find("p").html("Temp: " + temp + "&#176; C");
 
-                    if (data.weather[0].main == "Clear") {
-                        tempWidget.find("img").attr("src", weatherIcons[0]);
-                    } else if (data.weather[0].main == "Cloud") {
-                        tempWidget.find("img").attr("src", weatherIcons[1]);
-                    } else if (data.weather[0].main == "Dust" && data.weather[0].main == "Sand") {
-                        tempWidget.find("img").attr("src", weatherIcons[2]);
-                    } else if (data.weather[0].main == "Mist" && data.weather[0].main == "Haze" && data.weather[0].main == "Fog") {
-                        tempWidget.find("img").attr("src", weatherIcons[3]);
-                    } else if (data.weather[0].main == "Rain") {
-                        tempWidget.find("img").attr("src", weatherIcons[4]);
-                    } else if (data.weather[0].main == "Smog") {
-                        tempWidget.find("img").attr("src", weatherIcons[5]);
-                    } else if (data.weather[0].main == "Snow") {
-                        tempWidget.find("img").attr("src", weatherIcons[6]);
-                    } else if (data.weather[0].main == "Thunderstorm") {
-                        tempWidget.find("img").attr("src", weatherIcons[7]);
+                    switch (data.weather[0].main) {
+                        case "Clear": tempWidget.find("img").attr("src", weatherIcons[0]);
+                        break;
+                        case "Cloud" && "Clouds": tempWidget.find("img").attr("src", weatherIcons[1]);
+                        break;
+                        case "Sand": tempWidget.find("img").attr("src", weatherIcons[2]);
+                        break;
+                        case "Mist" && "Haze" && "Fog": tempWidget.find("img").attr("src", weatherIcons[3]);
+                        break;
+                        case "Rain": tempWidget.find("img").attr("src", weatherIcons[4]);
+                        break;
+                        case "Smog": tempWidget.find("img").attr("src", weatherIcons[5]);
+                        break;
+                        case "Snow": tempWidget.find("img").attr("src", weatherIcons[6]);
+                        break;
+                        case "Thunderstorm": tempWidget.find("img").attr("src", weatherIcons[7]);
+                        break;
                     }
 
                 });
@@ -66,4 +67,3 @@ let weatherWidget = {
 
 
 }
-
