@@ -100,7 +100,6 @@ nav ul li a.link-menu:hover, a.link-menu:active {
     background-image: url("../img/wardrobe.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -607,7 +606,7 @@ footer {
     .newsletter .containerWithForm
     {
         grid-column: 1/2;
-        padding-top: 0px;
+        padding-top: 0;
     }
     .wrapWithForm form input 
     {
@@ -651,7 +650,7 @@ footer {
     .newsletter .containerWithForm
     {
         grid-column: 1/2;
-        padding-top: 0px;
+        padding-top: 0;
     }
     .newsletter .social-media 
     {
@@ -682,7 +681,7 @@ footer {
     .newsletter .containerWithForm
     {
         grid-column: 1/2;
-        padding-top: 0px;
+        padding-top: 0;
     }
     .newsletter .social-media 
     {
