@@ -216,16 +216,16 @@ img {
     background-color: #ecf0f1;
     width: 450%;
     font-size: 1.5em;
-    transform: translate(10%, 900%);
+    transform: translate(5%, 400%);
     border-radius: 5px;
     padding-bottom: 5px;
 }
 
 .p2-feature {
     background-color: #ecf0f1;
-    width: 500%;
+    width: 600%;
     font-size: 2em;
-    transform: translate(20%, 0%);
+    transform: translate(10%, 0%);
     border-radius: 5px;
     padding-bottom: 5px;
 }
