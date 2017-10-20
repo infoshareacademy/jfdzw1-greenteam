@@ -29,7 +29,6 @@ section {
 .text h1 {
     font-size: 2em;
     padding-bottom: 5px;
-    color: #237987;
 }
 
 .clear {
@@ -172,15 +171,10 @@ a.hero-header-text {
 }
 /*END - header hero-header */
 
-
-.container {
-    margin: auto;
-    width: 100%;
-}
-
 section > .container {
     text-align: center;
     max-width: 90%;
+    margin: auto;
 }
 
 .row:before,
@@ -199,6 +193,7 @@ section > .container {
 img {
     height: auto;
     max-width: 100%;
+    border-radius: 20px;
 }
 
 /*SECTION FEATURE*/
@@ -217,32 +212,36 @@ img {
     border-radius: 5px;
     padding-bottom: 5px;
 }
-
-.p1-feature {
+.p-feature {
     background-color: #ecf0f1;
-    width: 450%;
-    font-size: 1.5em;
-    transform: translate(5%, 400%);
     border-radius: 5px;
     padding-bottom: 5px;
+    transform: translate(5%, 0);
+
+}
+
+.p1-feature {
+    width: 600%;
+    font-size: 2em;
 }
 
 .p2-feature {
-    background-color: #ecf0f1;
     width: 600%;
-    font-size: 2em;
-    transform: translate(10%, 0%);
-    border-radius: 5px;
-    padding-bottom: 5px;
-}
-
-
-.feature h4 {
     font-size: 1.5em;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 80px;
 }
+
+.p3-feature {
+    width: 300%;
+    font-size: 2em;
+    transform: translate(10%, 0);
+}
+
+.p4-feature {
+    width: 450%;
+    font-size: 2em;
+    transform: translate(7%, 0);
+}
+
 #containerForweatherWidget
 {
     font-size: 40px;
