@@ -239,7 +239,7 @@ img {
 .p4-feature {
     width: 550%;
     font-size: 2em;
-    transform: translate(7%, 0);
+    transform: translate(5%, 0);
 }
 
 #containerForweatherWidget
