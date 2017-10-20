@@ -29,6 +29,7 @@ section {
 .text h1 {
     font-size: 2em;
     padding-bottom: 5px;
+    color: #237987;
 }
 
 .clear {
@@ -141,6 +142,11 @@ nav ul li a.link-menu:hover, a.link-menu:active {
 .hero-header-text {
     font-size: 1.5em;
     letter-spacing: 3px;
+}
+
+.hero-header-accent {
+    color: #237987;
+    text-transform: capitalize;
 }
 
 .hero-header-button {
