@@ -395,18 +395,16 @@ a i {
 }
 
 .boxes-row {
-    margin: 80px 0 0 150px;
+    margin: 80px auto;
     padding: 20px auto;
 }
 
-.box1,
-.box2,
-.box3,
-.box4 {
-    float: left;
+.box
+ {
     background-color: #ecf0f1;
     border: 2px solid #D3D3D3;
     border-radius: 1px;
+    margin: 10px 40px;
 }
 
 .icon {
@@ -418,6 +416,7 @@ a i {
     margin-left: auto;
     margin-right: auto;
 }
+/*END SECTION About App*/
 
 /*Style for section Newsletter*/
 .newsletter {
@@ -563,7 +562,7 @@ footer {
 
 .photo ul {
     height: 100%;
-    margin: 10px 10px 10px 250px;
+    margin: 0 10px 0px 250px;
 }
 
 .photo ul li {
@@ -573,15 +572,17 @@ footer {
 
 .photo li a {
     display: block;
-    float: right;
+    float: left;
     text-align: center;
     font-size: 0.8em;
-    width: 100px;
+    width: 200px;
     text-decoration: none;
+    color: #000000;
     background: #58a7b4;
+    margin: 20px auto;
 }
 .law {
-    height: 100px;
+    height: 80px;
     width: 100%;
     background: #58a7b4;
 }
@@ -589,9 +590,9 @@ footer {
 .law p {
     display:block;
     text-align: center;
-    margin: 10px ;
     padding: 20px;
 }
+/*END Footer section*/
 
 /*@media*/
 
