@@ -231,13 +231,13 @@ img {
 }
 
 .p3-feature {
-    width: 300%;
+    width: 400%;
     font-size: 2em;
-    transform: translate(10%, 0);
+    transform: translate(7%, 0);
 }
 
 .p4-feature {
-    width: 450%;
+    width: 550%;
     font-size: 2em;
     transform: translate(7%, 0);
 }
