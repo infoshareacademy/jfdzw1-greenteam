@@ -35,6 +35,11 @@ section {
     clear: both;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
 /*return button to start*/
 #return-button-to-start
 {
@@ -264,10 +269,8 @@ img {
     padding-top: 80px;
 }
 
-.member1,
-.member2,
-.member3,
-.member4 {
+.member
+ {
     background-position: center;
     width: 100px;
     height: 100px;
@@ -364,10 +367,8 @@ a i {
     .employees h3 {
     }
 
-    .member1,
-    .member2,
-    .member3,
-    .member4
+    .member
+
     {
         height: 150px;
         width: 150px;
@@ -376,7 +377,7 @@ a i {
 
 /*END SECTION TEAM*/
 
-/*Style for section About App*/
+/*SECTION ABOUT APP*/
 .api{
     padding-top: 80px;
     padding-bottom: 80px;
@@ -416,11 +417,12 @@ a i {
     margin-left: auto;
     margin-right: auto;
 }
-/*END SECTION About App*/
+/*END SECTION ABOUT APP*/
 
 /*Style for section Newsletter*/
 .newsletter {
     background: url("../img/pen-2695348_1920.jpg");
+    background-size: cover;
     opacity: .9;
     width: 100%;
     box-sizing: border-box;
@@ -556,7 +558,7 @@ footer {
 
 .footer-box {
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     background: #ffffff;
 }
 
