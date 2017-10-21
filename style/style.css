@@ -216,7 +216,6 @@ img {
 }
 .h1-feature {
     background-color: #ecf0f1;
-    width: 400%;
     font-size: 3em;
     transform: translate(0, 0);
     border-radius: 5px;
@@ -228,29 +227,22 @@ img {
     padding-bottom: 5px;
     transform: translate(5%, 0);
     margin-bottom: 20px;
-
 }
 
 .p1-feature {
-    width: 600%;
     font-size: 2em;
 }
 
 .p2-feature {
-    width: 600%;
     font-size: 1.5em;
 }
 
 .p3-feature {
-    width: 400%;
     font-size: 2em;
-    transform: translate(7%, 0);
 }
 
 .p4-feature {
-    width: 550%;
     font-size: 2em;
-    transform: translate(5%, 0);
 }
 
 #containerForweatherWidget
