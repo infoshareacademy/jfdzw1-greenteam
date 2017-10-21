@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100i,400');
 @import url('https://fonts.googleapis.com/css?family=Lato:300i');
 
+/* common css */
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
-/* common css */
 body {
     background-color: #ecf0f1;
     margin: 0;
@@ -41,8 +41,7 @@ p {
 }
 
 /*return button to start*/
-#return-button-to-start
-{
+#return-button-to-start {
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -51,7 +50,6 @@ p {
     right: 70px;
     opacity: 0.6;
     transition: all 0.6s linear;
-    
 }
 #return-button-to-start:hover{
     opacity:1;
@@ -115,7 +113,6 @@ nav ul li a.link-menu:hover, a.link-menu:active {
     border: 1px solid #000000;
     color: #ffffff;
 }
-
 /*END - header logo menu */
 
 /*header hero-header */
@@ -181,6 +178,7 @@ a.hero-header-text {
 }
 /*END - header hero-header */
 
+/*SECTION  common */
 section > .container {
     text-align: center;
     max-width: 90%;
@@ -200,14 +198,48 @@ section > .container {
     width: 100%;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-    border-radius: 20px;
+/*SECTION ABOUT APP*/
+.api {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.box-api {
+    background-color: #ecf0f1;
 }
 
-/*SECTION FEATURE*/
+.box-api h3 {
+    text-align: center;
+}
 
+.box-api p {
+    text-align: center;
+    padding: 5px;
+}
+
+.boxes-row {
+    margin: 80px auto;
+    padding: 20px auto;
+}
+
+.box {
+    background-color: #ecf0f1;
+    border: 2px solid #D3D3D3;
+    border-radius: 1px;
+    margin: 10px 40px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color:#58a7b4 ;
+    border-radius: 100%;
+    margin-top: -35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*END SECTION ABOUT APP*/
+
+/*SECTION FEATURE*/
 .feature{
     width: 100%;
     background-color: #58a7b4;
@@ -245,8 +277,7 @@ img {
     font-size: 2em;
 }
 
-#containerForweatherWidget
-{
+#containerForweatherWidget {
     font-size: 40px;
     height: 100%;
     display: flex;
@@ -258,17 +289,14 @@ img {
     background-color: #ecf0f1;
     border-radius: 10px;
 }
-
 /*END SECTION FEATURE*/
 
 /*SECTION TEAM*/
-
 .employees {
     padding-top: 80px;
 }
 
-.member
- {
+.member {
     background-position: center;
     width: 100px;
     height: 100px;
@@ -299,10 +327,10 @@ img {
     font-weight: 300;
     line-height: 24px;
     margin-top: 12px;
-    font-size: 0.8em;
     color: #666;
     text-align: center;
     padding-right: 10px;
+    font-size: 0.9em;
 }
 
 .fa-linkedin {
@@ -324,13 +352,13 @@ a i {
     margin-bottom: 20px;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
 @media (min-width:1200px){
-    .col-lg-1 {
-        width: 8.33%;
-    }
-    .col-lg-2 {
-        width: 16.66%;
-    }
     .col-lg-3 {
         width: 25%;
     }
@@ -340,82 +368,14 @@ a i {
     .col-lg-5 {
         width: 41.66%;
     }
-    .col-lg-6 {
-        width: 50%;
-    }
-    .col-lg-7 {
-        width: 58.33%;
-    }
-    .col-lg-8 {
-        width: 66.66%;
-    }
-    .col-lg-9 {
-        width: 75%;
-    }
-    .col-lg-10 {
-        width: 83.33%;
-    }
-    .col-lg-11 {
-        width: 91.66%;
-    }
-    .col-lg-12 {
-        width: 100%;
-    }
-
     .employees h3 {
     }
-
-    .member
-
-    {
+    .member {
         height: 150px;
         width: 150px;
     }
 }
-
 /*END SECTION TEAM*/
-
-/*SECTION ABOUT APP*/
-.api{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-.box-api {
-    background-color: #ecf0f1;
-}
-
-.box-api h3 {
-    text-align: center;
-}
-
-.box-api p {
-    text-align: center;
-    padding: 5px;
-}
-
-.boxes-row {
-    margin: 80px auto;
-    padding: 20px auto;
-}
-
-.box
- {
-    background-color: #ecf0f1;
-    border: 2px solid #D3D3D3;
-    border-radius: 1px;
-    margin: 10px 40px;
-}
-
-.icon {
-    width: 80px;
-    height: 80px;
-    background-color:#58a7b4 ;
-    border-radius: 100%;
-    margin-top: -35px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*END SECTION ABOUT APP*/
 
 /*Style for section Newsletter*/
 .newsletter {
@@ -429,6 +389,7 @@ a i {
     grid-template-columns: 2fr 1fr;
     grid-row-gap: 3em;
 }
+
 .containerWithForm {
     box-sizing: border-box;
     grid-column: 1/3;
@@ -446,8 +407,7 @@ a i {
     padding-right: 10px;
 }
 
-.wrapWithForm form
-{
+.wrapWithForm form {
     width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -455,8 +415,7 @@ a i {
     justify-content: center;
 }
 
-.wrapWithForm form input
-{
+.wrapWithForm form input {
     text-align: left;
     background-color: #ecf0f1;
     padding-left: 20px;
@@ -467,17 +426,17 @@ a i {
     font-size: 1.8em;
     opacity: 0.8;
 }
-.wrapWithForm form input:focus
-{
+
+.wrapWithForm form input:focus {
     box-shadow: 0 0 3px 1px #FFD53C;
     opacity: 1;
 }
-.wrapWithForm form input:focus+button
-{
+
+.wrapWithForm form input:focus+button {
     box-shadow: 0 0 3px 1px #FFD53C;
 }
-.wrapWithForm form button
-{
+
+.wrapWithForm form button {
     width: 50px;
     height: 50px;
     border: 3px black solid;
@@ -486,12 +445,10 @@ a i {
     font-size: 1.5em;
     transition: all 0.6s linear;
 }
-.wrapWithForm form button:hover
-{
+.wrapWithForm form button:hover {
     background-color: #000000;
     color: #ecf0f1;
 }
-
 
 .containerWithForm p:nth-of-type(1) {
     color: #000000;
@@ -501,12 +458,12 @@ a i {
     letter-spacing: 1px;
     text-shadow: 2px 2px 2px #ffffff;
 }
+
 .newsletter .containerWithForm p:nth-of-type(2) {
     font-size: 1em;
     color: #000000;
     text-align: center;
     margin-top: 90px;
-    
 }
 
 .social-media {
@@ -528,25 +485,28 @@ a i {
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .social-media ul li a {
     text-decoration: none;
     color: #000000;
     transition: color ease 1s;
 }
+
 .social-media ul li a:hover {
     color: #FFD53C;
     cursor: pointer;
 }
+
 .social-media ul li i {
     margin-right: 10px;
     display: inline-block;
     transition: all ease 1s;
 }
+
 .social-media ul li i:hover {
     opacity: .6;
     transform: rotateY(360deg)
 }
-
 /*End style for Newsletter*/
 
 /*footer*/
@@ -562,7 +522,7 @@ footer {
 
 .photo ul {
     height: 100%;
-    margin: 0 10px 0px 250px;
+    margin: 0 10px 0 250px;
 }
 
 .photo ul li {
