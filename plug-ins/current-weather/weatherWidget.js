@@ -38,11 +38,11 @@ let weatherWidget = {
                     switch (data.weather[0].main) {
                         case "Clear": tempWidget.find("img").attr("src", weatherIcons[0]);
                         break;
-                        case "Cloud" && "Clouds": tempWidget.find("img").attr("src", weatherIcons[1]);
+                        case "Cloud" || "Clouds": tempWidget.find("img").attr("src", weatherIcons[1]);
                         break;
                         case "Sand": tempWidget.find("img").attr("src", weatherIcons[2]);
                         break;
-                        case "Mist" && "Haze" && "Fog": tempWidget.find("img").attr("src", weatherIcons[3]);
+                        case "Mist" || "Haze" || "Fog": tempWidget.find("img").attr("src", weatherIcons[3]);
                         break;
                         case "Rain": tempWidget.find("img").attr("src", weatherIcons[4]);
                         break;
