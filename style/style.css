@@ -210,7 +210,7 @@ img {
 
 .feature{
     width: 100%;
-    background-image: url("../img/umbrellas-2780384_1920.jpg");
+    background-color: #58a7b4;
     background-size: cover;
     background-attachment: fixed;
 }
