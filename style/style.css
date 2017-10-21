@@ -35,6 +35,11 @@ section {
     clear: both;
 }
 
+p {
+    padding: 0;
+    margin: 0;
+}
+
 /*return button to start*/
 #return-button-to-start
 {
@@ -133,14 +138,19 @@ nav ul li a.link-menu:hover, a.link-menu:active {
     text-decoration: none;
 }
 
+.hero-header-text {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+}
+
 .hero-header-text h1 {
     font-size: 3em;
     letter-spacing: 3px;
 }
 
-.hero-header-text {
-    font-size: 1.5em;
-    letter-spacing: 3px;
+.hero-header-text p {
+    padding-bottom: 20px;
 }
 
 .hero-header-accent {
@@ -217,6 +227,7 @@ img {
     border-radius: 5px;
     padding-bottom: 5px;
     transform: translate(5%, 0);
+    margin-bottom: 20px;
 
 }
 
