@@ -68,22 +68,17 @@ p {
     border: 0;
 }
 
-.navbar-toggle {
-    background-color: #000000;
-}
-
 .navbar-brand {
     padding: 0;
 }
 
 .navbar-brand img {
-    max-width: 150px;
     height: 80px;
 }
 
 .nav a {
     color: #000000;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-radius: 20px;
     text-decoration: none;
     transition: all 1s linear;
@@ -94,10 +89,19 @@ p {
 }
 
 .nav li a:hover {
-    color: #ffffff;
+    color: #ecf0f1;
     background-color: #000000;
     border: 1px solid #000000;
 }
+
+.navbar-toggle {
+    background-color: #000000;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+
 /*END - header logo menu */
 
 /*header hero-header */
