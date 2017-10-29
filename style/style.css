@@ -101,7 +101,6 @@ p {
 .navbar-toggle .icon-bar {
     background-color: #ecf0f1;
 }
-
 /*END - header logo menu */
 
 /*header hero-header */
@@ -114,17 +113,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all 4s;
 }
 
 .hero-header-text {
-    width: 100%;
     text-align: center;
     line-height: 1.5;
-    text-decoration: none;
-}
-
-.hero-header-text {
     font-size: 1.5em;
     letter-spacing: 3px;
     padding-bottom: 30px;
@@ -152,7 +145,7 @@ p {
     border-radius: 20px;
     opacity: 0.74;
     text-align: center;
-    width: 18%;
+    width: 250px;
 }
 
 a.hero-header-text {
@@ -170,7 +163,6 @@ a.hero-header-text {
 /*SECTION  common */
 section > .container {
     text-align: center;
-    max-width: 90%;
     margin: auto;
 }
 
