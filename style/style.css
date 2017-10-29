@@ -59,28 +59,13 @@ p {
     width: 100%;
     height: 100%;
 }
-
-/*header logo menu */
-
-.main-header {
-    width: 100%;
-    background-color: #58a7b4;
-    position: fixed;
-    z-index: 3;
-    top:0;
-}
-.logo {
-    float: left;
-    text-align: center;
-    margin: 0 auto;
-    width: 200px;
-    height: 100px;
+.navbar-brand {
+    padding: 0;
 }
 
-nav {
-    max-width: 80%;
-    margin: auto;
-    text-align: center;
+.navbar-brand img {
+    width: 100px;
+    height: 60px;
 }
 
 nav ul.menu {
@@ -352,11 +337,7 @@ a i {
     margin-bottom: 20px;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-    border-radius: 20px;
-}
+
 
 @media (min-width:1200px){
     .col-lg-3 {
