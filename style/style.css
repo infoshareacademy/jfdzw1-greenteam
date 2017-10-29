@@ -193,10 +193,6 @@ section > .container {
     background-color: transparent;
 }
 
-[class*="col-"] {
-    float: left;
-    width: 100%;
-}
 
 /*SECTION ABOUT APP*/
 .api {
@@ -216,7 +212,7 @@ section > .container {
     padding: 5px;
 }
 
-.boxes-row {
+.row {
     margin: 80px auto;
     padding: 20px auto;
 }
