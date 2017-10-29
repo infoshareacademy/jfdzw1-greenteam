@@ -160,25 +160,6 @@ a.hero-header-text {
 }
 /*END - header hero-header */
 
-/*SECTION  common */
-section > .container {
-    text-align: center;
-    margin: auto;
-}
-
-.row:before,
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    background-color: transparent;
-}
-
-[class*="col-"] {
-    float: left;
-    width: 100%;
-}
-
 /*SECTION ABOUT APP*/
 .api {
     padding-top: 80px;
@@ -227,35 +208,21 @@ section > .container {
     background-size: cover;
     background-attachment: fixed;
 }
-.h1-feature {
-    background-color: #ecf0f1;
-    font-size: 3em;
+.feature h1 {
+    color: #ecf0f1;
+    font-size: 2em;
     transform: translate(0, 0);
     border-radius: 5px;
     padding-bottom: 5px;
 }
-.p-feature {
-    background-color: #ecf0f1;
-    border-radius: 5px;
+.feature li {
+    color: #ecf0f1;
     padding-bottom: 5px;
-    transform: translate(5%, 0);
-    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
-.p1-feature {
-    font-size: 2em;
-}
-
-.p2-feature {
-    font-size: 1.5em;
-}
-
-.p3-feature {
-    font-size: 2em;
-}
-
-.p4-feature {
-    font-size: 2em;
+.feature img {
+    height: 300px;
 }
 
 #containerForweatherWidget {
@@ -266,7 +233,6 @@ section > .container {
     justify-content: center;
     align-items: center;
     padding: 100px 20px;
-    float: right;
     background-color: #ecf0f1;
     border-radius: 10px;
 }
