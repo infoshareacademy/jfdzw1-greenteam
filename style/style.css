@@ -280,23 +280,16 @@ a.hero-header-text {
     background-size: cover;
     opacity: .9;
     width: 100%;
-    box-sizing: border-box;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-row-gap: 3em;
 }
 
 .containerWithForm {
-    box-sizing: border-box;
-    grid-column: 1/3;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .containerWithForm h1 {
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 40px;
-    text-align: center;
     color: #000000;
     text-shadow: 2px 2px 2px #ffffff;
     letter-spacing: 2px;
@@ -350,7 +343,6 @@ a.hero-header-text {
 .containerWithForm p:nth-of-type(1) {
     color: #000000;
     font-size: 1.4em;
-    text-align: center;
     display: block;
     letter-spacing: 1px;
     text-shadow: 2px 2px 2px #ffffff;
@@ -359,12 +351,15 @@ a.hero-header-text {
 .newsletter .containerWithForm p:nth-of-type(2) {
     font-size: 1em;
     color: #000000;
-    text-align: center;
     margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 .social-media {
-    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-media ul {
@@ -467,23 +462,46 @@ nav ul li a {
 /*@media*/
 
 @media (min-width: 576px) and (max-width: 767px) {
-
+    
+    /*newsletter*/
+    .newsletter{
+        background-attachment:fixed;
+    }
+    .social-media ul{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
     
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) { 
-   
+       
+    /*newsletter*/
+    .newsletter{
+        background-attachment: fixed;
+    }
+    .social-media ul{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
 }
 
 
 @media (min-width: 992px) and (max-width: 1159px) { 
-
+    
+    /*newsletter*/
+    .newsletter{
+        background-attachment: fixed;
+    }
     
 }
 
 
 @media (min-width: 1200px) { 
     
-    
+    /*newsletter*/
+    .newsletter{
+        background-attachment: fixed;
+    }
 }
