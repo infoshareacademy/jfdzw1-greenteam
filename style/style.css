@@ -42,6 +42,9 @@ p {
 }
 
 /*return button to start*/
+.{
+  background-color: red;
+}
 
 .return-button-to-start_hide{
   opacity: 0;
@@ -92,7 +95,7 @@ p {
   height: 80px;
 }
 
-.nav a {
+.link-menu{
   color: #000000;
   font-size: 1.2em;
   border-radius: 20px;
@@ -103,11 +106,18 @@ p {
 .nav li {
   padding: 10px;
 }
-
+.position-on-page {
+  color: #ecf0f1;
+  background-color: #000000;
+  font-size: 1.2em;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 1s linear;
+}
 .nav li a:hover {
   color: #ecf0f1;
   background-color: #000000;
-  border: 1px solid #000000;
+  
 }
 
 .navbar-toggle {
