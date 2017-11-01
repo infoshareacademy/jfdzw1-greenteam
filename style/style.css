@@ -42,14 +42,16 @@ p {
 }
 
 /*return button to start*/
-.{
+
+. {
   background-color: red;
 }
 
-.return-button-to-start_hide{
+.return-button-to-start_hide {
   opacity: 0;
   border-radius: 50%;
 }
+
 .return-button-to-start {
   width: 50px;
   height: 50px;
@@ -69,7 +71,8 @@ p {
   opacity: 1;
   transform: scale(1.2);
 }
-.return-button-to-start a{
+
+.return-button-to-start a {
   display: block;
 }
 
@@ -95,7 +98,7 @@ p {
   height: 80px;
 }
 
-.link-menu{
+.link-menu {
   color: #000000;
   font-size: 1.2em;
   border-radius: 20px;
@@ -106,6 +109,7 @@ p {
 .nav li {
   padding: 10px;
 }
+
 .position-on-page {
   color: #ecf0f1;
   background-color: #000000;
@@ -114,10 +118,11 @@ p {
   text-decoration: none;
   transition: all 1s linear;
 }
+
 .nav li a:hover {
   color: #ecf0f1;
   background-color: #000000;
-  
+
 }
 
 .navbar-toggle {
@@ -276,6 +281,9 @@ a.hero-header-text {
 
 /*SECTION TEAM*/
 
+.portfolio{
+  display: none;
+}
 #team h1 {
   margin-bottom: 50px;
 }

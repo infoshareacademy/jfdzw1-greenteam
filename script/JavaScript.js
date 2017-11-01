@@ -30,6 +30,7 @@ $(window).scroll(() => {
   let teamOffsetTop = $('#team')["0"].offsetTop;
   let newsletterOffsetTop = $('#newsletter')["0"].offsetTop;
   let footerOffsetTop = $('#footer')["0"].offsetTop;
+  let portfoliosHide = $('.portfolio');
 
   if (scrollTop > aboutAppOffsetTop - aboutAppOffsetTop / 2 && scrollTop < descriptionOffsetTop - descriptionOffsetTop / 5) {
     firstA.removeClass().addClass('position-on-page');
@@ -54,4 +55,17 @@ $(window).scroll(() => {
   } else {
     forthA.removeClass().addClass('link-menu');
   }
+  
+  
+  
+  if(scrollTop > teamOffsetTop - teamOffsetTop / 5 && scrollTop < newsletterOffsetTop - newsletterOffsetTop / 8){
+    portfoliosHide.show( "fold", 2000 );
+  }else{
+    portfoliosHide.hide( "size", { direction: "up" }, "slow" );
+  }
 })
+
+
+  
+  
+
