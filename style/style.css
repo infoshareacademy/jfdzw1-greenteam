@@ -136,17 +136,6 @@ p {
 
 /*header hero-header */
 
-.hero-header-background {
-  color: whitesmoke;
-  height: 100vh;
-  background-image: url("../img/wardrobe.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .hero-header-text {
   text-align: center;
   line-height: 1.5;
