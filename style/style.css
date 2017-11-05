@@ -18,8 +18,8 @@ body {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .text {
@@ -135,6 +135,23 @@ p {
 /*END - header logo menu */
 
 /*header hero-header */
+.hero-header {padding-bottom: 0}
+
+.fill {
+  color: whitesmoke;
+  width:100%;
+  height:100vh;
+  background-position:center;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.autumn {background-image: url('../img/autumn-2895335.jpg')}
+.winter {background-image: url('../img/frozen-2898564_1920.jpg')}
+.spring {background-image: url('../img/cherry-blossom-1318258_1920.jpg')}
+.summer {background-image: url('../img/summer-still-life-779386_1920.jpg')}
 
 .hero-header-text {
   text-align: center;
