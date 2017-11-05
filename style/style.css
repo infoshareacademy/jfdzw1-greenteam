@@ -221,7 +221,8 @@ a.hero-header-text {
   background-color: #ecf0f1;
   border: 2px solid #D3D3D3;
   border-radius: 1px;
-  margin: 20px 0px;
+  margin: 30px 0px;
+  padding-bottom: 20px;
 }
 
 .icon {
@@ -486,6 +487,13 @@ footer {
   display: block;
   text-align: center;
   padding-top: 10px;
+}
+.cookies{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
 }
 
 /*END Footer section*/
