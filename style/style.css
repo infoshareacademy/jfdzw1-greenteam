@@ -55,7 +55,6 @@ p {
 .return-button-to-start {
   width: 50px;
   height: 50px;
-  border-radius: 5px;
   position: fixed;
   bottom: 10%;
   right: 5%;
@@ -221,7 +220,7 @@ a.hero-header-text {
   background-color: #ecf0f1;
   border: 2px solid #D3D3D3;
   border-radius: 1px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .icon {
