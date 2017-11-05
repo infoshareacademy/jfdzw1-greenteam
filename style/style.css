@@ -18,8 +18,8 @@ body {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .text {
@@ -55,7 +55,6 @@ p {
 .return-button-to-start {
   width: 50px;
   height: 50px;
-  border-radius: 5px;
   position: fixed;
   bottom: 10%;
   right: 5%;
@@ -136,24 +135,29 @@ p {
 /*END - header logo menu */
 
 /*header hero-header */
+.hero-header {padding-bottom: 0}
 
-.hero-header-background {
+.fill {
   color: whitesmoke;
-  height: 100vh;
-  background-image: url("../img/wardrobe.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
+  width:100%;
+  height:100vh;
+  background-position:center;
+  background-size:cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.autumn {background-image: url('../img/autumn-2895335.jpg')}
+.winter {background-image: url('../img/frozen-2898564_1920.jpg')}
+.spring {background-image: url('../img/cherry-blossom-1318258_1920.jpg')}
+.summer {background-image: url('../img/summer-still-life-779386_1920.jpg')}
 
 .hero-header-text {
   text-align: center;
   line-height: 1.5;
   font-size: 1.5em;
   letter-spacing: 3px;
-  padding-bottom: 30px;
 }
 
 .hero-header-text h1 {
