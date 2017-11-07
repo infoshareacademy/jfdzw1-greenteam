@@ -52,6 +52,7 @@ p {
   border-radius: 50%;
 }
 
+
 .return-button-to-start {
   width: 50px;
   height: 50px;
@@ -135,29 +136,54 @@ p {
 /*END - header logo menu */
 
 /*header hero-header */
-.hero-header {padding-bottom: 0}
+
+.hero-header {
+  padding-bottom: 0
+}
 
 .fill {
   color: whitesmoke;
-  width:100%;
-  height:100vh;
-  background-position:center;
-  background-size:cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.autumn {background-image: url('../img/autumn-2895335.jpg')}
-.winter {background-image: url('../img/frozen-2898564_1920.jpg')}
-.spring {background-image: url('../img/cherry-blossom-1318258_1920.jpg')}
-.summer {background-image: url('../img/summer-still-life-779386_1920.jpg')}
+.autumn {
+  background-image: url('../img/autumn-2895335.jpg');
+}
+.women{
+  background-image: url(../img/women-2808629_1920.jpg);
+}
+.winter {
+  background-image: url('../img/frozen-2898564_1920.jpg');
+}
+.umbrella{
+  background-image: url(../img/umbrellas-2780384_1920.jpg);
+}
+
+.spring {
+  background-image: url('../img/cherry-blossom-1318258_1920.jpg');
+}
+.blouse{
+  background-image: url(../img/blouse-2597205_1920.jpg);
+}
+
+.summer {
+  background-image: url('../img/summer-still-life-779386_1920.jpg');
+}
+.girl{
+  background-image: url(../img/girl-1848455_1920.jpg);
+}
 
 .hero-header-text {
   text-align: center;
   line-height: 1.5;
   font-size: 1.5em;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 .hero-header-text h1 {
@@ -196,6 +222,12 @@ a.hero-header-text {
   transition: all 2s;
 }
 
+.boxbox {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
 /*END - header hero-header */
 
 /*SECTION ABOUT APP*/
@@ -218,9 +250,10 @@ a.hero-header-text {
   padding: 5px;
 }
 
-.box-api .row{
+.box-api .row {
   margin: 40px 0;
 }
+
 .box {
   background-color: #ecf0f1;
   border: 2px solid #D3D3D3;
@@ -284,9 +317,10 @@ a.hero-header-text {
 
 /*SECTION TEAM*/
 
-.portfolio{
+.portfolio {
   display: none;
 }
+
 #team h1 {
   margin-bottom: 50px;
 }
@@ -463,20 +497,23 @@ footer {
   background-color: #ffffff;
 }
 
-.photo img { max-width: 100%;
+.photo img {
+  max-width: 100%;
 
 }
-.footer a{
+
+.footer a {
   color: #000000;
 
 }
-.footer-box{
-   width: 150px;
-   text-align: center;
-   background-color: #58a7b4;
+
+.footer-box {
+  width: 150px;
+  text-align: center;
+  background-color: #58a7b4;
   border-radius: 20px;
   margin: 20px 0;
- }
+}
 
 
 
@@ -492,7 +529,8 @@ footer {
   text-align: center;
   padding-top: 10px;
 }
-.cookies{
+
+.cookies {
   position: fixed;
   top: 0;
   left: 0;
@@ -505,7 +543,20 @@ footer {
 /*@media*/
 
 @media (min-width: 576px) and (max-width: 767px) {
-
+  /*header hero-header */
+  
+   .hero-header-text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+  
+  .boxbox {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
@@ -520,6 +571,21 @@ footer {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  /*header hero-header */
+  .hero-header-text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
+
+  .boxbox {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+
+
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
@@ -531,7 +597,21 @@ footer {
 }
 
 
-@media (min-width: 992px) and (max-width: 1159px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /*header hero-header */
+  .hero-header-text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
+
+  .boxbox {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+  }
 
   /*newsletter*/
   .newsletter {
@@ -542,6 +622,20 @@ footer {
 
 
 @media (min-width: 1200px) {
+
+  /*header hero-header */
+  .hero-header-text {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
+
+  .boxbox {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
 
   /*newsletter*/
   .newsletter {
