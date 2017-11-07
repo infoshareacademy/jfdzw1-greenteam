@@ -290,12 +290,62 @@ a.hero-header-text {
   border-radius: 5px;
   padding-bottom: 5px;
 }
-
+.feature h1:hover{
+  opacity: 1;
+}
+.feature ul{
+  
+}
 .feature li {
+  margin: 40px 0;
   color: #ecf0f1;
   padding-bottom: 5px;
   font-size: 1.2em;
+  opacity: 0.3;
+  
 }
+.feature li:nth-of-type(1){
+  
+  transform: rotate(-5deg);
+  transition: all .6s linear;
+}
+.feature li:nth-of-type(1):hover{
+  transform: rotate(0deg);
+  opacity: 1;
+}
+.feature li:nth-of-type(2){
+  transform: skew(5deg,5deg);
+  transition: all .6s linear;
+}
+.feature li:nth-of-type(2):hover{
+  transform: skew(0deg,0deg);
+  opacity: 1;
+}
+.feature li:nth-of-type(3){
+  transform: rotateX(180deg);
+  transition: all .6s linear;
+}
+.feature li:nth-of-type(3):hover{
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+.feature li:nth-of-type(4){
+  transform: rotateY(180deg);
+  transition: all .6s linear;
+}
+.feature li:nth-of-type(4):hover{
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.feature li:nth-of-type(5){
+  transform: skewY(10deg);
+  transition: all .6s linear;
+}
+.feature li:nth-of-type(5):hover{
+  transform: skewY(0deg);
+  opacity: 1;
+}
+
 
 .feature img {
   height: 300px;
