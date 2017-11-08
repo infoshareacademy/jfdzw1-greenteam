@@ -155,27 +155,32 @@ p {
 .autumn {
   background-image: url('../img/autumn-2895335.jpg');
 }
-.women{
+
+.women {
   background-image: url(../img/women-2808629_1920.jpg);
 }
+
 .winter {
   background-image: url('../img/frozen-2898564_1920.jpg');
 }
-.umbrella{
+
+.umbrella {
   background-image: url(../img/umbrellas-2780384_1920.jpg);
 }
 
 .spring {
   background-image: url('../img/cherry-blossom-1318258_1920.jpg');
 }
-.blouse{
+
+.blouse {
   background-image: url(../img/blouse-2597205_1920.jpg);
 }
 
 .summer {
   background-image: url('../img/summer-still-life-779386_1920.jpg');
 }
-.girl{
+
+.girl {
   background-image: url(../img/girl-1848455_1920.jpg);
 }
 
@@ -201,7 +206,7 @@ p {
 }
 
 .hero-header-button {
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 10px 30px;
   background-color: #ffffff;
   border: 1px solid #58a7b4;
@@ -222,11 +227,6 @@ a.hero-header-text {
   transition: all 2s;
 }
 
-.boxbox {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-}
 
 /*END - header hero-header */
 
@@ -544,19 +544,13 @@ footer {
 
 @media (min-width: 576px) and (max-width: 767px) {
   /*header hero-header */
-  
-   .hero-header-text {
+  .hero-header-text {
     text-align: center;
     line-height: 1.5;
     font-size: 1.5em;
     letter-spacing: 1px;
   }
-  
-  .boxbox {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-  }
+
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
@@ -579,11 +573,6 @@ footer {
     letter-spacing: 3px;
   }
 
-  .boxbox {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-  }
 
 
   /*newsletter*/
@@ -607,11 +596,6 @@ footer {
     letter-spacing: 3px;
   }
 
-  .boxbox {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-  }
 
   /*newsletter*/
   .newsletter {
@@ -629,12 +613,6 @@ footer {
     line-height: 1.5;
     font-size: 1.5em;
     letter-spacing: 3px;
-  }
-
-  .boxbox {
-    position: absolute;
-    top: 20%;
-    left: 20%;
   }
 
   /*newsletter*/

@@ -28,7 +28,7 @@ let weatherWidget = {
 
                 $.ajax ({
                     type: "GET",
-                    url: "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=544acc97ad41e1c817efb0487429e01b",
+                    url: "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=544acc97ad41e1c817efb0487429e01b",
                     dataType: 'json'
                 }).done (function (data) {
                     console.log (data);
