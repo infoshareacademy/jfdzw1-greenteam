@@ -7,11 +7,13 @@ function initScoreboard(scoreboard) {
         var i = 1;
         var initPlayerName;
         var initPlayerScore;
+        var initPlayer;
+
         while (i < 6) {
             initPlayerName = "Jan" + i;
             initPlayerScore = i*1000;
-            createPlayer(initPlayerName,initPlayerScore);
-            insertPlayer(initPlayerName,initPlayerScore);
+            initPlayer = createPlayer(initPlayerName,initPlayerScore);
+            insertPlayer(initPlayer);
             i++;
         }
     }
