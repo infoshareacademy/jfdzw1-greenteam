@@ -16,10 +16,10 @@ function initScoreboard(scoreboard) {
             insertPlayer(initPlayer);
             i++;
         }
+        return scoreboard;
     }
 }
 
-initScoreboard(scoreboard);
 
 function createPlayer() {
 
