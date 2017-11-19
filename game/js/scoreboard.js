@@ -20,13 +20,30 @@ function initScoreboard(scoreboard) {
 }
 
 
-function createPlayer() {
+function createPlayer(text,number) {
 
+   var player = {
+       name:text,
+       score:number
+   };
+
+   return player;
 }
 
-function insertPlayer() {
-
+function insertPlayer(player) {
+    scoreboard.push(player);
+    scoreboard.sort(sortPlayers);
+    scoreboard.length=5;
 }
+
+function sortPlayers (pl1,pl2){
+
+    return pl2.score-pl1.score;
+}
+
+
+
+
 
 function getResults() {
 
