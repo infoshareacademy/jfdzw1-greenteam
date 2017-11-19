@@ -16,7 +16,6 @@ function initScoreboard(scoreboard) {
             insertPlayer(initPlayer);
             i++;
         }
-        return scoreboard;
     }
 }
 
