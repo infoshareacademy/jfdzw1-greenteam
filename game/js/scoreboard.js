@@ -19,7 +19,6 @@ function initScoreboard(scoreboard) {
     }
 }
 
-initScoreboard(scoreboard);
 
 function createPlayer() {
 
