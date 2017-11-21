@@ -1,6 +1,6 @@
 var scoreboard = [];
 
-function initScoreboard(scoreboard) {
+function initScoreboard (scoreboard) {
     // check if scoreboard is empty, if empty insert five initial players using insertPlayer function
     var scoreboardLn = scoreboard.length;
     if (scoreboardLn === 0) {
@@ -11,41 +11,41 @@ function initScoreboard(scoreboard) {
 
         while (i < 6) {
             initPlayerName = "Jan" + i;
-            initPlayerScore = i*1000;
-            initPlayer = createPlayer(initPlayerName,initPlayerScore);
-            insertPlayer(initPlayer);
+            initPlayerScore = i * 1000;
+            initPlayer = createPlayer (initPlayerName, initPlayerScore);
+            insertPlayer (initPlayer);
             i++;
         }
     }
 }
 
 
-function createPlayer(text,number) {
+function createPlayer (text, number) {
 
-   var player = {
-       name:text,
-       score:number
-   };
+    var player = {
+        name: text,
+        score: number
+    };
 
-   return player;
+    return player;
 }
 
-function insertPlayer(player) {
-    scoreboard.push(player);
-    scoreboard.sort(sortPlayers);
-    scoreboard.length=5;
+function insertPlayer (player) {
+    scoreboard.push (player);
+    scoreboard.sort (sortPlayers);
+    scoreboard.length = 5;
 }
 
-function sortPlayers (pl1,pl2){
+function sortPlayers (pl1, pl2) {
 
-    return pl2.score-pl1.score;
+    return pl2.score - pl1.score;
 }
 
 
+function getResults (arr) {
 
-
-
-function getResults() {
-
+    let newArr = arr.slice (0, arr.length);
+    return newArr;
 }
+
 
