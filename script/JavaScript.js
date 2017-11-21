@@ -134,3 +134,19 @@ firstAInFooter.click(function () {
    }, 900)
  })
 
+
+/*preloader*/
+ let preoladeEl = document.querySelector('#preloader');
+
+
+ window.addEventListener('load', function ()
+ {
+     preoladeEl.classList.add('preloader-hiding');
+     preoladeEl.addEventListener('transitionend', function ()
+     {
+         this.classList.add('preloader-hidden');
+         this.classList.remove('preloader-hiding');
+     });
+ });
+
+
