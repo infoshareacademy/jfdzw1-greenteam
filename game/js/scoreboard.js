@@ -41,7 +41,6 @@ function initScoreboard (scoreboard) {
     }
 }
 
-
 function createPlayer (text, number) {
 
     var player = {
@@ -70,4 +69,8 @@ function getResults (arr) {
     return newArr;
 }
 
+function sample () {
+
+    return initScoreboard (scoreboard);
+}
 
