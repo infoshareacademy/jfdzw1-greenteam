@@ -6,6 +6,7 @@ $background-color: #58a7b4;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-size: $standard-font-size;
+  background-color: $background-color;
 }
 /*** navigation ***/
 nav {
@@ -16,6 +17,7 @@ nav {
   flex-direction: column;
   p{
     padding-left: 20px;
+    padding-top: 15px;
   }
   button {
     height: 40px;
