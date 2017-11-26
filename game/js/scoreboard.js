@@ -30,9 +30,10 @@ function initScoreboard (scoreboard) {
     if (scoreboardLn === 0) {
         let initPlayerName, initPlayerScore, initPlayer;
         let i = 1;
-        
+        let initPlayersNames = ["Michał", "Piotr", "Ilona", "Krzysztof", "Szymon", "Daria", "Wojciech", "Agnieszka"];
+
         while (i < 6) {
-            initPlayerName = "Jan" + i;
+            initPlayerName = initPlayersNames[Math.floor(Math.random() * (initPlayersNames.length))];
             initPlayerScore = i * 1000;
             initPlayer = createPlayer (initPlayerName, initPlayerScore);
             insertPlayer (initPlayer);
