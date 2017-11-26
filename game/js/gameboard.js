@@ -1,4 +1,5 @@
 
+
 let tags = {
     sunny: 'sunny',
     windy: 'windy',
@@ -24,5 +25,13 @@ let blocks = {
         tags: [tags.snowy, tags.cold ],
         className: 'winter-board'
     },],
+
+
+
+function getRandomItem () {
+    let randomIntem = Math.floor(Math.random() * (blocks.items.length));
+
+    return blocks.items[randomIntem];
+    
 
 }
