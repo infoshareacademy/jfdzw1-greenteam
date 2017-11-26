@@ -5,3 +5,10 @@ let tagsSeason = {
     autumn: 'rainy',
     winter: 'snowy',
 }
+
+function getRandomItem () {
+    let randomIntem = Math.floor(Math.random() * (blocks.items.length));
+
+    return blocks.items[randomIntem];
+    
+}
