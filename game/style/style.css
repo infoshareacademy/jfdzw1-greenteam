@@ -1,0 +1,58 @@
+/*** common ***/
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+/*** navigation ***/
+nav {
+  width: 100%;
+  background: #58a7b4;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; }
+  nav p {
+    padding-left: 20px; }
+  nav button {
+    height: 40px;
+    min-width: 120px;
+    border-radius: 20px;
+    margin: 5px;
+    border: 0;
+    color: #ecf0f1;
+    background-color: #000000; }
+
+/*** game content ***/
+.game-container {
+  color: whitesmoke;
+  width: 100%;
+  height: 87vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/autumboard.jpg"); }
+
+/*** footer ***/
+footer {
+  width: 100%;
+  background: #58a7b4;
+  display: flex;
+  justify-content: center; }
+  footer p {
+    text-align: center;
+    font-size: 0.8em; }
+
+/***media***/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  nav {
+    flex-direction: row; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  nav {
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */

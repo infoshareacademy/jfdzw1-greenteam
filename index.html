@@ -37,6 +37,12 @@
 </head>
 
 <body>
+<!--Preloader-->
+<div id="preloader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
   <!-- Header-->
   <div class="return-button-to-start_hide" id="return-button"><a href="#hero-header"><img src="img/up-arrow.png" alt=""></a></div>
   <header>
@@ -51,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-          <a class="navbar-brand" href="#hero-header">
+          <a id="navbar-brand" class="navbar-brand" href="nasza aplikacja" target="_blank">
                     <img src="img/logo.jpg" alt="logo outfits by weather"/>
                 </a>
         </div>
@@ -59,34 +65,134 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a id="firtsAInNav" class="link-menu" href="#about-app">Outfits by weather</a></li>
-            <li><a id="secondAInNav" class="link-menu" href="#description">Facts & figures</a></li>
-            <li><a id="thirdAInNav" class="link-menu" href="#team">Team</a></li>
-            <li><a id="fourthAInNav" class="link-menu" href="#newsletter">Newsletter</a></li>
+            <li><a id="firtsAInNav" class="link-menu" href="#">Outfits by weather</a></li>
+            <li><a id="secondAInNav" class="link-menu" href="#">Facts & figures</a></li>
+            <li><a id="thirdAInNav" class="link-menu" href="#">Team</a></li>
+            <li><a id="fourthAInNav" class="link-menu" href="#">Newsletter</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <!-- hero header -->
-    <div class="hero-header-background" id="hero-header">
-      <div class="container-fluid">
-        <div class="hero-header-text">
-          <h1>Outfits by weather</h1>
-          <p>There is no such thing as <span class="hero-header-accent"> bad weather </span> just a bad choice of cloths</p>
-          <p>Is it posible to check weather and explore fashion news</p>
-        </div>
-        <div class="hero-header-button">
-          <a href="#about-app" class="hero-header-text">Let's find out</a>
-        </div>
-      </div>
-    </div>
   </header>
-
   <!-- Main-->
   <main>
     <!-- All About APP-->
+    <section class="hero-header" id="hero-header">
+      <div class="container fill">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item">
+              <div class="fill autumn">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>There is no such thing as <span class="hero-header-accent"> bad weather </span> just a bad choice of cloths</p>
+                  <p>Is it posible to check weather and explore fashion news</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item active">
+              <div class="fill women">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill winter">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill umbrella">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill spring">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill blouse">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill summer">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill girl">
+                <div class="hero-header-text">
+                  <h1>Outfits by weather</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="hero-header-button">
+                  <a href="#about-app" class="hero-header-text">Let's find out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+          <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+        </div>
+      </div>
+    </section>
     <section class="api" id="about-app">
       <div class="box-api">
         <div class="text">
@@ -101,7 +207,7 @@
                   <img class="location" src="img/location.png">
                 </div>
                 <h3>LOCATION</h3>
-                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
+                <p>You know where you are in this great world.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -110,7 +216,7 @@
                   <img class="cloud" src="img/cloud.png">
                 </div>
                 <h3>WEATHER</h3>
-                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
+                <p>Weather will never surprise you. Because you know it.</p>
               </div>
             </div>
 
@@ -120,7 +226,7 @@
                   <img class="cloud" src="img/shoe.png">
                 </div>
                 <h3>FASHION</h3>
-                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
+                <p>How to dress fashionably? We will tell you.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -129,7 +235,7 @@
                   <img class="cloud" src="img/smile.png">
                 </div>
                 <h3>FUN</h3>
-                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography, layout.</p>
+                <p>First of all you will have a great time with our application.</p>
               </div>
             </div>
           </div>
@@ -164,17 +270,27 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="portfolio"><img class="center-block img-thumbnail img-responsive" src="https://thumb.ibb.co/nFpu6v/wn.jpg" alt="wojciech najda"></div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 background">
+            <div class="parent" id="parent">
+              <div class="panel_group1">
+                <div class="panel"></div>
+                <div class="panel back1"></div>
+              </div>
+            </div>
             <h3 class="text-center">Wojciech Najda</h3>
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+            <p class="text-justify">A programmer whose goal is to be a versatile encoder. My life's maxim: "Life is about achieving goals and accomplishing them." </p>
             <div class="box-for-a">
               <a href="https://www.linkedin.com/in/wojciech-najda-99aa5188/" target="_blank"><i class="fa fa-linkedin"></i></a>
               <a href="https://github.com/wojtexnaj" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="portfolio"><img class="center-block img-thumbnail" src="img/dm.jpg" alt="daria mirowska"></div>
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 background">
+            <div class="parent" id="parent">
+              <div class="panel_group2">
+                <div class="panel"></div>
+                <div class="panel back2"></div>
+              </div>
+            </div>
             <h3 class="text-center">Daria Mirowska</h3>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
             <div class="box-for-a">
@@ -182,8 +298,12 @@
               <a href="https://github.com/MirowskaDaria" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="portfolio"><img class="center-block img-thumbnail" src="img/ach.jpg" alt="agnieszka chróścielewska">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 background">
+            <div class="parent" id="parent">
+              <div class="panel_group3">
+                <div class="panel"></div>
+                <div class="panel back3"></div>
+              </div>
             </div>
             <h3 class="text-center">Agnieszka Chróścielewska</h3>
             <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
@@ -236,29 +356,28 @@
         </div>
         <div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
           <div class="footer-box">
-          <a href="#about-app">Outfits by weather</a></li>
+            <a id="firtsAInFooter" href="#">Outfits by weather</a></li>
           </div>
         </div>
         <div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
           <div class="footer-box">
-          <a href="#description">Facts & figures</a>
+            <a id="secondAInFooter" href="#">Facts & figures</a>
           </div>
         </div>
         <div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
           <div class="footer-box">
-          <a href="#team">Team</a>
+            <a id="thirdAInFooter" href="#">Team</a>
           </div>
         </div>
         <div class="hidden-xs col-sm-3 col-md-2 col-lg-2">
           <div class="footer-box">
-          <a href="#newsletter">Newsletter</a>
+            <a id="forthAInFooter" href="#">Newsletter</a>
           </div>
         </div>
       </div>
     </div>
     <div class="law">
-      <p>All rights reserved</p>
-    </div>
+      <p>All rights reserved &copy;</p>
     </div>
   </footer>
 
