@@ -1,7 +1,28 @@
-let tagsSeason = {
 
-    spring: 'sunny',
-    summer: 'hot',
-    autumn: 'rainy',
-    winter: 'snowy',
+let tags = {
+    sunny: 'sunny',
+    windy: 'windy',
+    hot: 'hot',
+    snowy: 'snowy',
+    rainy: 'rainy',
+    cloudy: 'cloudy',
+    cold: 'cold'
+}
+
+
+let blocks = {
+    items: [{
+        tags: [tags.sunny, tags.hot],
+        className: 'spring-board'
+    },{
+        tags: [tags.sunny, tags.windy],
+        className: 'summer-board'
+    },{
+        tags: [tags.cloudy,tags.rainy],
+        className: 'autumn-board'
+    },{
+        tags: [tags.snowy, tags.cold ],
+        className: 'winter-board'
+    },],
+
 }
