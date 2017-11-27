@@ -91,7 +91,6 @@ function test (scrollTop, teamOffsetTop,newsletterOffsetTop, portfoliosHide) {
 
   
   
-=======
  let firstA = $('#firtsAInNav');
  let secondA = $('#secondAInNav');
  let thirdA = $("#thirdAInNav");
