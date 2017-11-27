@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let firstA = $('#firtsAInNav');
 let secondA = $('#secondAInNav');
 let thirdA = $("#thirdAInNav");
@@ -243,5 +243,5 @@ firstAInFooter.click(function () {
      });
  });
 
->>>>>>> f20e2e3c33aba0d8ddbdfed439f85a00dfc279b0
+
 
