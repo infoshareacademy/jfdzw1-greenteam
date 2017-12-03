@@ -685,6 +685,7 @@ footer {
 
 /*END Footer section*/
 
+
 /*@media*/
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -704,22 +705,10 @@ footer {
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
-
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-
-  /*header hero-header */
-  .hero-header-text {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-  }
-
-
-
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
@@ -732,36 +721,22 @@ footer {
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
-  /*header hero-header */
-  .hero-header-text {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-  }
-
-
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
   }
-
+  .modal-lg {
+    width: 990px;
+  }
 }
 
 
 @media (min-width: 1200px) {
-
-  /*header hero-header */
-  .hero-header-text {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1.5em;
-    letter-spacing: 3px;
-  }
-
   /*newsletter*/
   .newsletter {
     background-attachment: fixed;
+  }
+  .modal-lg {
+    width: 990px;
   }
 }

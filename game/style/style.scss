@@ -8,10 +8,17 @@ $background-color2: #ecf0f1;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-size: $standard-font-size;
+
 }
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("../img/autumboard.jpg");
+}
+
 /*** navigation ***/
 nav {
-
   background: $background-color;
   display: flex;
   justify-content: flex-end;
@@ -49,15 +56,7 @@ nav {
 .modal-footer{
   background-color: $background-color;
 }
-/*** game content ***/
-.game-container {
-  color: whitesmoke;
-  width: 100%;
-  height: 87vh;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/autumboard.jpg");
-}
+
 
 /*** footer ***/
 footer {
