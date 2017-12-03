@@ -91,10 +91,7 @@ function test (scrollTop, teamOffsetTop,newsletterOffsetTop, portfoliosHide) {
 
   
   
- let firstA = $('#firtsAInNav');
- let secondA = $('#secondAInNav');
- let thirdA = $("#thirdAInNav");
- let forthA = $("#fourthAInNav");
+
  let firstAInFooter = $("#firtsAInFooter");
  let secondAInFooter = $("#secondAInFooter");
  let thirdAInFooter = $("#thirdAInFooter");
