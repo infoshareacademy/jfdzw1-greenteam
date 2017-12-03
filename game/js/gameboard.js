@@ -24,8 +24,8 @@ let blocks = {
     }, {
         tags: [tags.snowy, tags.cold],
         className: 'winter-board'
-    },],
-    getRandomItem: getRandomItem(),
+    }],
+    getRandomItem: getRandomItem
 }
 
 
