@@ -8,19 +8,23 @@ $ (document).ready (function () {
 
 var $playerName = '';
 
+// save player name form newsletter form
 $(function () {
     $('button').click(function (e) {
         e.preventDefault();
 
         $playerName = ($('#customerName').val());
 
-        console.log($playerName);
-
     });
 });
 
 
 $('#modalGame').on('shown.bs.modal', function (e) {
-    alert($playerName);
-})
+    e.preventDefault();
+
+    console.log($playerName);
+
+    $('<i>TEST</i>').appendTo($('#currentPlayer'));
+
+});
 
