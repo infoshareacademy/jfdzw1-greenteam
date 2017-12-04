@@ -535,9 +535,9 @@ a.hero-header-text {
   width: 60%;
   height: 50px;
   border: 3px #000000 solid;
-  border-right: none;
   font-size: 1.8em;
   opacity: 0.8;
+  margin-left: 10px;
 }
 
 .wrapWithForm form input:focus {
