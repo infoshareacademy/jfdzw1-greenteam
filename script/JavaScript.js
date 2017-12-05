@@ -88,10 +88,6 @@ function test (scrollTop, teamOffsetTop,newsletterOffsetTop, portfoliosHide) {
   }
 }
 
-
-  
-  
-
  let firstAInFooter = $("#firtsAInFooter");
  let secondAInFooter = $("#secondAInFooter");
  let thirdAInFooter = $("#thirdAInFooter");
@@ -238,6 +234,18 @@ firstAInFooter.click(function () {
          this.classList.remove('preloader-hiding');
      });
  });
+
+ /*modal Game*/
+
+$(function () {
+
+    $('#submitNewsletter').click(function (e) {
+        e.preventDefault();
+
+        $(`<object width="100%" height="700px" data ="game/index.html?name=${$('#customerName').val()}"></object>`)
+            .prependTo('#modalGame');
+    });
+});
 
 
 
