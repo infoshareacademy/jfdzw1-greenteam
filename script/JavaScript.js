@@ -242,6 +242,8 @@ $(function () {
     $('#submitNewsletter').click(function (e) {
         e.preventDefault();
 
+        let $object = $('#modalGame').empty();
+
         $(`<object width="100%" height="700px" data ="game/index.html?name=${$('#customerName').val()}"></object>`)
             .prependTo('#modalGame');
     });
