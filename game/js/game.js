@@ -17,7 +17,6 @@ $ (document).ready (function () {
     }
 
     var $playerName = getParameterByName('name');
-    alert($playerName);
 
     let $object = $('#currentPlayer').empty();
 
