@@ -88,10 +88,6 @@ function test (scrollTop, teamOffsetTop,newsletterOffsetTop, portfoliosHide) {
   }
 }
 
-
-  
-  
-
  let firstAInFooter = $("#firtsAInFooter");
  let secondAInFooter = $("#secondAInFooter");
  let thirdAInFooter = $("#thirdAInFooter");
@@ -238,6 +234,33 @@ firstAInFooter.click(function () {
          this.classList.remove('preloader-hiding');
      });
  });
+
+ /*modal Game*/
+
+$(function () {
+
+    $('#submitNewsletter').click(function (e) {
+        e.preventDefault();
+
+        let $playerName = $('#customerName').val();
+        let $playerEmail = $('#customerEmail').val();
+
+        let pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        let $is_email = pattern.test($playerEmail);
+
+        let $object = $('#modalGameContent').empty();
+
+        if ($playerName && $playerEmail && $is_email ) {
+            $(`<object width="100%" height="700px" data ="game/index.html?name= ${$playerName}"></object>`)
+                .prependTo('#modalGameContent');
+
+            $('#modalGame').addClass('bs-modal-lg');
+        }
+        else {
+            $('#modalGame').removeClass('bs-modal-lg');
+            return alert('Fill in your name and correct email address');}
+    });
+});
 
 
 

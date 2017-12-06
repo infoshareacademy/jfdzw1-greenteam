@@ -7,7 +7,7 @@
 body {
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("../img/autumboard.jpg"); }
+  background-image: url("../img/hourglass-1875812_1920.jpg"); }
 
 /*** navigation ***/
 nav {
@@ -17,7 +17,7 @@ nav {
   flex-direction: column; }
 
 p {
-  padding-left: 20px;
+  padding-left: 15px;
   padding-top: 15px; }
 
 .button {
@@ -28,6 +28,15 @@ p {
   border: 0;
   color: #ecf0f1;
   background-color: #000000; }
+
+.startGame {
+  height: 40px;
+  min-width: 120px;
+  border-radius: 20px;
+  margin: 5px;
+  border: 0;
+  color: #000000;
+  background-color: #ecf0f1; }
 
 /*** score table ***/
 .table > tbody > tr > td {

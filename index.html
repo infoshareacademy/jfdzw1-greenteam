@@ -322,10 +322,11 @@
           <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-8 containerWithForm">
             <h1 class="text-center">Join us! Discover the potential of our application! Premiere soon!</h1>
             <div class="wrapWithForm">
-              <form method="post" action="#">
-                <input type="email" required placeholder="Your e-mail">
-                <button type="submit" data-toggle="modal" data-target=".bs-modal-lg"><i class="demo-icon icon-right-big"></i></button>
-              </form>
+                <form action="#">
+                    <input id="customerName" type="text" name="customerName" placeholder="Your name" pattern="[A-Za-z]{3}" required><br>
+                    <input id="customerEmail" type="email" name="customerEmail" placeholder="Your e-mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Email format" required>
+                    <button id="submitNewsletter" type="submit" data-toggle="modal" data-target=".bs-modal-lg"><i class="demo-icon icon-right-big"></i></button>
+                </form>
             </div>
             <p class="text-center">Sign up for the newsletter.</p>
             <p class="text-center"><i class="demo-icon icon-info-circled"></i>You will only receive one email per message about the launch of our app. We guarantee the security of your personal information.</p>
@@ -343,15 +344,12 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div>
-            <object width="100%" height="700px" data="game/index.html"></object>
-          </div>
-        </div>
+    <!-- Game-->
+    <div id="modalGame" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div id="modalGameContent" class="modal-dialog modal-lg" role="document">
+
       </div>
-    </section>
+    </div>
   </main>
   <!-- Footer-->
   <footer class="footer" id="footer">
@@ -396,6 +394,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="plug-ins/current-weather/weatherWidget.js"></script>
   <script src="script/JavaScript.js"></script>
+
 </body>
 
 </html>
