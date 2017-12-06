@@ -242,10 +242,23 @@ $(function () {
     $('#submitNewsletter').click(function (e) {
         e.preventDefault();
 
-        let $object = $('#modalGame').empty();
+        let $playerName = $('#customerName').val();
+        let $playerEmail = $('#customerEmail').val();
 
-        $(`<object width="100%" height="700px" data ="game/index.html?name=${$('#customerName').val()}"></object>`)
-            .prependTo('#modalGame');
+        let pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        let $is_email = pattern.test($playerEmail);
+
+        let $object = $('#modalGameContent').empty();
+
+        if ($playerName && $playerEmail && $is_email ) {
+            $(`<object width="100%" height="700px" data ="game/index.html?name= ${$playerName}"></object>`)
+                .prependTo('#modalGameContent');
+
+            $('#modalGame').addClass('bs-modal-lg');
+        }
+        else {
+            $('#modalGame').removeClass('bs-modal-lg');
+            return alert('Fill in your name and correct email address');}
     });
 });
 
