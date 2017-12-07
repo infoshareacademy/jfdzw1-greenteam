@@ -5,6 +5,8 @@ $ (document).ready (function () {
 
         let $board = gameboard.getRandomBoard();
         $('body').addClass($board.className);
+
+        $('#startGame').css('display', 'none');
     });
 
     function initGame () {
