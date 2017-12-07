@@ -17,28 +17,55 @@ body {
   background-image: url("../img/hourglass-1875812_1920.jpg");
 }
 
+/*** game boards ***/
+.winter-board {
+  background-image: url("../img/winterboard.jpg");
+}
+
+.spring-board {
+  background-image: url("../img/springboard.jpg");
+}
+
+.summer-board {
+  background-image: url("../img/summerboard.jpg");
+}
+
+.autumn-board {
+  background-image: url("../img/autumboard.jpg");
+}
+
 /*** navigation ***/
+.button {
+  height: 40px;
+  min-width: 120px;
+  border-radius: 20px;
+  margin: 5px;
+  border: 0;
+  color: #ecf0f1;
+  background-color: #000000;
+}
+
 nav {
   background: $background-color;
   display: flex;
   justify-content: flex-end;
-  flex-direction: column;}
+  flex-direction: column;
 
-  p{
+  p {
     padding-left: 15px;
     padding-top: 15px;
+    margin-right: 10px;
   }
 
-  .button {
-    height: 40px;
-    min-width: 120px;
-    border-radius: 20px;
-    margin: 5px;
-    border: 0;
-    color: #ecf0f1;
-    background-color: #000000;
+  #playerScore {
+    display: none;
   }
-  .startGame {
+
+  #currentScore {
+    display: none;
+  }
+
+  .startGameBt {
     height: 40px;
     min-width: 120px;
     border-radius: 20px;
@@ -47,6 +74,8 @@ nav {
     color: #000000;
     background-color: #ecf0f1;
   }
+}
+
 /*** score table ***/
 .table>tbody>tr>td
  {

@@ -1,28 +1,5 @@
 var scoreboard = [];
 
-let gameboard =
-  {
-    boards: [
-      {
-        tag: "winter",
-        className: "winterboard"
-      },
-      {
-        tag: "spring",
-        className: "springboard"
-      },
-      {
-        tag: "summer",
-        className: "summerboard"
-      },
-      {
-        tag: "autumn",
-        className: "autumboard"
-      }
-    ],
-    getRandomBoard: function () {
-    }
-  };
 
 function initScoreboard (scoreboard) {
   // check if scoreboard is empty, if empty insert five initial players using insertPlayer function
