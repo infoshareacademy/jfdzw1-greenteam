@@ -32,4 +32,27 @@ let blocks = {
     }
 }
 
+let gameboard =
+    {
+        boards: [
+            {
+                tag: "winter",
+                className: "winterboard"
+            },
+            {
+                tag: "spring",
+                className: "springboard"
+            },
+            {
+                tag: "summer",
+                className: "summerboard"
+            },
+            {
+                tag: "autumn",
+                className: "autumboard"
+            }
+        ],
+        getRandomBoard: function () {
+        }
+    };
 
