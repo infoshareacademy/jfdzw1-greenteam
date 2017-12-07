@@ -17,6 +17,23 @@ body {
   background-image: url("../img/hourglass-1875812_1920.jpg");
 }
 
+/*** game boards ***/
+.winter-board {
+  background-image: url("../img/winterboard.jpg");
+}
+
+.spring-board {
+  background-image: url("../img/springboard.jpg");
+}
+
+.summer-board {
+  background-image: url("../img/summerboard.jpg");
+}
+
+.autumn-board {
+  background-image: url("../img/autumboard.jpg");
+}
+
 /*** navigation ***/
 nav {
   background: $background-color;
@@ -47,6 +64,10 @@ nav {
     color: #000000;
     background-color: #ecf0f1;
   }
+.game-container {
+
+}
+
 /*** score table ***/
 .table>tbody>tr>td
  {

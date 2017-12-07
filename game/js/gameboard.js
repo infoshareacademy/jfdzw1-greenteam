@@ -37,22 +37,25 @@ let gameboard =
         boards: [
             {
                 tag: "winter",
-                className: "winterboard"
+                className: "winter-board"
             },
             {
                 tag: "spring",
-                className: "springboard"
+                className: "spring-board"
             },
             {
                 tag: "summer",
-                className: "summerboard"
+                className: "summer-board"
             },
             {
                 tag: "autumn",
-                className: "autumboard"
+                className: "autumn-board"
             }
         ],
         getRandomBoard: function () {
+            let randomBoard = Math.floor(Math.random() * (gameboard.boards.length));
+
+            return gameboard.boards[randomIntem];
         }
     };
 

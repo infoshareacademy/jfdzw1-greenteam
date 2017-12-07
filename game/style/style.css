@@ -9,6 +9,19 @@ body {
   background-size: 100%;
   background-image: url("../img/hourglass-1875812_1920.jpg"); }
 
+/*** game boards ***/
+.winter-board {
+  background-image: url("../img/winterboard.jpg"); }
+
+.spring-board {
+  background-image: url("../img/springboard.jpg"); }
+
+.summer-board {
+  background-image: url("../img/summerboard.jpg"); }
+
+.autumn-board {
+  background-image: url("../img/autumboard.jpg"); }
+
 /*** navigation ***/
 nav {
   background: #58a7b4;
