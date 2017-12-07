@@ -23,17 +23,6 @@ body {
   background-image: url("../img/autumboard.jpg"); }
 
 /*** navigation ***/
-nav {
-  background: #58a7b4;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column; }
-
-p {
-  padding-left: 15px;
-  padding-top: 15px;
-  margin-right: 10px; }
-
 .button {
   height: 40px;
   min-width: 120px;
@@ -43,14 +32,27 @@ p {
   color: #ecf0f1;
   background-color: #000000; }
 
-.startGameBt {
-  height: 40px;
-  min-width: 120px;
-  border-radius: 20px;
-  margin: 5px;
-  border: 0;
-  color: #000000;
-  background-color: #ecf0f1; }
+nav {
+  background: #58a7b4;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; }
+  nav p {
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-right: 10px; }
+  nav #playerScore {
+    display: none; }
+  nav #currentScore {
+    display: none; }
+  nav .startGameBt {
+    height: 40px;
+    min-width: 120px;
+    border-radius: 20px;
+    margin: 5px;
+    border: 0;
+    color: #000000;
+    background-color: #ecf0f1; }
 
 /*** score table ***/
 .table > tbody > tr > td {

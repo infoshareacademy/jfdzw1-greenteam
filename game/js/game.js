@@ -11,6 +11,9 @@ $ (document).ready (function () {
         $('.button').css('display', 'none');
 
         $('#player').text('Player name');
+        $('#playerScore').css('display', 'inline');
+        $('#currentScore').css('display', 'inline').text('0');
+
     });
 
     function initGame () {
