@@ -1,7 +1,13 @@
 $ (document).ready (function () {
 
-    function initGame ()
-    {
+    $('#startGame').click(function (e) {
+        e.preventDefault();
+
+        let $board = gameboard.getRandomBoard();
+        $('body').addClass($board.className);
+    });
+
+    function initGame () {
 
     }
 

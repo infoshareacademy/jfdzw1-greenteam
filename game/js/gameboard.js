@@ -55,7 +55,7 @@ let gameboard =
         getRandomBoard: function () {
             let randomBoard = Math.floor(Math.random() * (gameboard.boards.length));
 
-            return gameboard.boards[randomIntem];
+            return gameboard.boards[randomBoard];
         }
     };
 
