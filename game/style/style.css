@@ -31,7 +31,8 @@ nav {
 
 p {
   padding-left: 15px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  margin-right: 10px; }
 
 .button {
   height: 40px;

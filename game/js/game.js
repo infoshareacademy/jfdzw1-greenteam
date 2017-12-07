@@ -6,7 +6,11 @@ $ (document).ready (function () {
         let $board = gameboard.getRandomBoard();
         $('body').addClass($board.className);
 
+        $('#player').empty();
         $('#startGame').css('display', 'none');
+        $('.button').css('display', 'none');
+
+        $('#player').text('Player name');
     });
 
     function initGame () {
