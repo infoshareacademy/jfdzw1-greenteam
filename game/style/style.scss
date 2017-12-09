@@ -20,18 +20,22 @@ body {
 /*** game boards ***/
 .winter-board {
   background-image: url("../img/winterboard.jpg");
+  background-size: cover;
 }
 
 .spring-board {
   background-image: url("../img/springboard.jpg");
+  background-size: cover;
 }
 
 .summer-board {
   background-image: url("../img/summerboard.jpg");
+  background-size: cover;
 }
 
 .autumn-board {
   background-image: url("../img/autumboard.jpg");
+  background-size: cover;
 }
 
 /*** navigation ***/
