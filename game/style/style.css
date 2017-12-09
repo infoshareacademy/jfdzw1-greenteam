@@ -11,16 +11,20 @@ body {
 
 /*** game boards ***/
 .winter-board {
-  background-image: url("../img/winterboard.jpg"); }
+  background-image: url("../img/winterboard.jpg");
+  background-size: auto; }
 
 .spring-board {
-  background-image: url("../img/springboard.jpg"); }
+  background-image: url("../img/springboard.jpg");
+  background-size: auto; }
 
 .summer-board {
-  background-image: url("../img/summerboard.jpg"); }
+  background-image: url("../img/summerboard.jpg");
+  background-size: auto; }
 
 .autumn-board {
-  background-image: url("../img/autumboard.jpg"); }
+  background-image: url("../img/autumboard.jpg");
+  background-size: auto; }
 
 /*** navigation ***/
 .button {

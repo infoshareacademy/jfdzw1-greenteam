@@ -38,6 +38,9 @@ $ (document).ready (function () {
     $(`<b>${$playerName}</b>`)
         .prependTo('#currentPlayer');
 
+
+
+
 });
 
 
