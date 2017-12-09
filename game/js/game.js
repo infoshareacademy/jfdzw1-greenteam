@@ -3,14 +3,19 @@ $ (document).ready (function () {
     $('#startGame').click(function (e) {
         e.preventDefault();
 
-        let $board = gameboard.getRandomBoard();
-        $('body').addClass($board.className);
+        var $gameStatus = {
+            currnetSeason: gameboard.getRandomBoard(),
+            playerName: $playerName,
+            playerScore: 0,
+            timeToEnd: ''
+        };
 
-        $('#player').empty();
+        $('body').addClass($gameStatus.currnetSeason.className);
+
         $('#startGame').addClass("hidden");
         $('.button').addClass("hidden");
 
-        $('#player').text('Player name');
+        $('#player').empty().text('Player name');
         $('#playerScore').css('display', 'inline');
         $('#currentScore').css('display', 'inline').text('0');
         $('#timer').removeClass('hidden').addClass('show');
