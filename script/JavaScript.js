@@ -253,6 +253,8 @@ $(function () {
         if ($playerName && $playerEmail && $is_email ) {
             $(`<object width="100%" height="700px" data ="game/index.html?name= ${$playerName}"></object>`)
                 .prependTo('#modalGameContent');
+            $(`<button id="closeGame" class="button closeButton" data-dismiss="modal"><b>x</b></button>`)
+                .prependTo('#modalGameContent');
 
             $('#modalGame').addClass('bs-modal-lg');
         }
@@ -261,6 +263,8 @@ $(function () {
             return alert('Fill in your name and correct email address');}
     });
 });
+
+
 
 
 

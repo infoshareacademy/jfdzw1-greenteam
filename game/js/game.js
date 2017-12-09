@@ -21,6 +21,7 @@ $ (document).ready (function () {
 
     });
 
+
     function initGame () {
 
     }
@@ -42,7 +43,6 @@ $ (document).ready (function () {
 
     $(`<b>${$playerName}</b>`)
         .prependTo('#currentPlayer');
-    
 
 });
 
