@@ -7,12 +7,14 @@ $ (document).ready (function () {
         $('body').addClass($board.className);
 
         $('#player').empty();
-        $('#startGame').css('display', 'none');
-        $('.button').css('display', 'none');
+        $('#startGame').addClass("hidden");
+        $('.button').addClass("hidden");
 
         $('#player').text('Player name');
         $('#playerScore').css('display', 'inline');
         $('#currentScore').css('display', 'inline').text('0');
+        $('#timer').removeClass('hidden').addClass('show');
+        timer (11);
 
     });
 
@@ -39,6 +41,27 @@ $ (document).ready (function () {
         .prependTo('#currentPlayer');
 
 
+    let time = document.getElementById("time");
+
+
+    function timer (timeToEnd) {
+      if (timeToEnd === 0) {
+        return;
+      }
+
+      timeToEnd = timeToEnd -1;
+
+      if(timeToEnd < 10){
+        time.innerHTML = "0" + timeToEnd;
+      }else{
+        time.innerHTML = timeToEnd;
+      }
+
+
+      setTimeout(function() {
+        timer(timeToEnd);
+      }, 1000);
+    }
 
 
 });

@@ -10,6 +10,12 @@ $background-color2: #ecf0f1;
   font-size: $standard-font-size;
 
 }
+.hidden{
+  display: none;
+}
+.show{
+  display: inline-block;
+}
 
 body {
   background-repeat: no-repeat;
