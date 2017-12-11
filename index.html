@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -325,7 +325,7 @@
                 <form action="#">
                     <input id="customerName" type="text" name="customerName" placeholder="Your name" required><br>
                     <input id="customerEmail" type="email" name="customerEmail" placeholder="Your e-mail" required>
-                    <button id="submitNewsletter" type="submit" data-toggle="modal" data-target=".bs-modal-lg"><i class="demo-icon icon-right-big"></i></button>
+                    <button id="submitNewsletter" type="submit" data-toggle="modal" data-target=".bs-modal-lg" data-backdrop="static"><i class="demo-icon icon-right-big"></i></button>
                 </form>
             </div>
             <p class="text-center">Sign up for the newsletter.</p>
@@ -347,8 +347,14 @@
     <!-- Game-->
     <div id="modalGame" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div id="modalGameContent" class="modal-dialog modal-lg" role="document">
+          <div class="modal-body">
 
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default closeGameBtn" data-dismiss="modal">Close game</button>
+          </div>
       </div>
+
     </div>
   </main>
   <!-- Footer-->

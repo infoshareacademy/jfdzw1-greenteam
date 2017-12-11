@@ -76,6 +76,12 @@ nav {
     color: #000000;
     background-color: #ecf0f1;
   }
+  .closeButton {
+    border-radius: 100%;
+    min-width: 40px;
+    border-color: white;
+    border: solid 2px;
+  }
 }
 
 /*** score table ***/

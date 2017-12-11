@@ -630,6 +630,17 @@ a.hero-header-text {
 
 /*End style for Newsletter*/
 
+/*modal Game*/
+.closeGameBtn {
+  height: 40px;
+  min-width: 120px;
+  border-radius: 20px;
+  margin: 5px;
+  border: 0;
+  color: #ecf0f1;
+  background-color: #000000;
+}
+
 /*footer*/
 
 footer {
