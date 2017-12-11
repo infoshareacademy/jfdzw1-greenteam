@@ -1,64 +1,64 @@
 let scarf= {
     season:'winter',
-    url:'',
+    url: '',
     points: 10
 }
 
 let winterCap= {
     season:'winter',
-    url:'',
+    url: '',
     points: 10
 }
 
 let gloves = {
     season:'winter',
-    url:'',
+    url: '',
     points: 10
 }
 
 let sunglasses = {
     season:'summer',
-    url:'',
+    url: '',
     points: 10
 }
 
 let swimsuit = {
     season:'summer',
-    url:'',
+    url: '',
     points: 10
 }
 let hat = {
     season:'summer',
-    url:'',
+    url: '',
     points: 10
 }
 
 let flipFlops = {
     season:'summer',
-    url:'',
+    url: '',
     points: 10
 }
 
 let raincoat = {
     season:'autumn',
-    url:'',
+    url: '',
     points: 10
 }
 
 let umbrella = {
     season:'autumn',
-    url:'',
+    url: '',
     points: 10
 }
 
 let wellingtons= {
     season:'autumn',
-    url:'',
+    url: '',
     points: 10
 }
 
 
-$ (document).ready (function () {
+$ (function () {
 
     $('#startGame').click(function (e) {
         e.preventDefault();
@@ -87,6 +87,20 @@ $ (document).ready (function () {
 
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
+
+        setInterval(function () {
+            let $newItem = $('<div></div>');
+            $newItem.css({
+                'position': 'absolute',
+                'top': `${Math.round(Math.random() * 1000)}px`,
+                'left': `${Math.round(Math.random() * 1000)}px`,
+                'width': '100px',
+                'height': '100px',
+                'background-image': 'url("img/umbrella.png")',
+                'z-index': 100
+            });
+            $newItem.appendTo('body');
+        }, 2000);
 
     });
 
