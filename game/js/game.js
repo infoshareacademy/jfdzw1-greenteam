@@ -64,10 +64,9 @@ $ (document).ready (function () {
         e.preventDefault();
 
         var $gameStatus = {
-            currnetSeason: gameboard.getRandomBoard(),
-            playerName: $playerName,
-            playerScore: 0,
-            timeToEnd: '',
+            currentSeason: gameboard.getRandomBoard(),
+            player: createPlayer ($playerName, 0),
+            timeToEnd: timer (61),
             items:[scarf,sunglasses,winterCap,gloves,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons],
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
@@ -76,22 +75,20 @@ $ (document).ready (function () {
             }
         };
 
-        $('body').addClass($gameStatus.currnetSeason.className);
-
-        $('#startGame').addClass("hidden");
+        // hide buttons
         $('.button').addClass("hidden");
 
+        // change Welcome label
         $('#player').empty().text('Player name');
-        $('#playerScore').css('display', 'inline');
-        $('#currentScore').css('display', 'inline').text('0');
+
+        // show currnet score and timer
+        $('#playerScore').removeClass('hidden').addClass('show');
         $('#timer').removeClass('hidden').addClass('show');
-        timer (11);
+
+        // show random gameboard
+        $('body').addClass($gameStatus.currentSeason.className);
 
     });
-
-    function initGame () {
-
-    }
 
     // get player name form scr
     function getParameterByName(name, url) {
@@ -104,10 +101,10 @@ $ (document).ready (function () {
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    var $playerName = getParameterByName('name');
+    // show playerName 
+    let $playerName = getParameterByName('name');
 
     let $object = $('#currentPlayer').empty();
-
     $(`<b>${$playerName}</b>`)
         .prependTo('#currentPlayer');
 
@@ -133,7 +130,6 @@ $ (document).ready (function () {
         timer(timeToEnd);
       }, 1000);
     }
-
 
 });
 

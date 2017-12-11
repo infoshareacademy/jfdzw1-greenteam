@@ -51,10 +51,6 @@ nav {
     padding-left: 15px;
     padding-top: 15px;
     margin-right: 10px; }
-  nav #playerScore {
-    display: none; }
-  nav #currentScore {
-    display: none; }
   nav .startGameBt {
     height: 40px;
     min-width: 120px;
