@@ -88,19 +88,25 @@ $ (function () {
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
+
+
+
         setInterval(function () {
             let $newItem = $('<div></div>');
+
             $newItem.css({
                 'position': 'absolute',
-                'top': `${Math.round(Math.random() * 1000)}px`,
-                'left': `${Math.round(Math.random() * 1000)}px`,
+                'top': `${Math.round(Math.random() * 600)}px`,
+                'left': `${Math.round(Math.random() * 850)}px`,
                 'width': '100px',
                 'height': '100px',
                 'background-image': 'url("img/umbrella.png")',
                 'z-index': 100
-            });
-            $newItem.appendTo('body');
-        }, 2000);
+            })
+
+            $newItem.appendTo('body').delay(6000).queue(function() { $(this).remove();});
+
+            }, 2000);
 
     });
 
@@ -138,7 +144,6 @@ $ (function () {
       }else{
         time.innerHTML = timeToEnd;
       }
-
 
       setTimeout(function() {
         timer(timeToEnd);
