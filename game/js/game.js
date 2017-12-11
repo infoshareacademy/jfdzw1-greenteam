@@ -1,62 +1,78 @@
 let scarf= {
     season:'winter',
-    url: '',
+    url: '../game/img/Scarf.png',
     points: 10
 }
 
 let winterCap= {
     season:'winter',
-    url: '',
+    url: '../game/img/winter cap.png',
     points: 10
 }
 
 let gloves = {
     season:'winter',
-    url: '',
+    url: '../game/img/gloves.png',
     points: 10
 }
 
 let sunglasses = {
     season:'summer',
-    url: '',
+    url: '../game/img/sunglasses.png',
     points: 10
 }
 
 let swimsuit = {
     season:'summer',
-    url: '',
+    url: '../game/img/swimsuit.png',
     points: 10
 }
 let hat = {
     season:'summer',
-    url: '',
+    url: '../game/img/hat.png',
     points: 10
 }
 
 let flipFlops = {
     season:'summer',
-    url: '',
+    url: '../game/img/flipflops.png',
     points: 10
 }
 
-let raincoat = {
+let coat = {
     season:'autumn',
-    url: '',
+    url: '../game/img/darkcoat.png',
     points: 10
 }
 
 let umbrella = {
     season:'autumn',
-    url: '',
+    url: '../game/img/umbrella.png',
     points: 10
 }
 
 let wellingtons= {
     season:'autumn',
-    url: '',
+    url: '../game/img/wellingtons.png',
+    points: 10
+}
+let dress = {
+    season:'autumn',
+    url: '../game/img/dress.png',
     points: 10
 }
 
+let raincoat = {
+    season:'autumn',
+    url: '../game/img/raincoat.png',
+    points: 10
+}
+
+let jacket= {
+    season:'autumn',
+    url: '../game/img/jacket.png',
+    points: 10
+}
 
 $ (function () {
 
@@ -67,7 +83,7 @@ $ (function () {
             currentSeason: gameboard.getRandomBoard(),
             player: createPlayer ($playerName, 0),
             timeToEnd: 61,
-            items:[scarf,sunglasses,winterCap,gloves,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons],
+            items:[scarf,sunglasses,winterCap,gloves,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons,dress,jacket,coat],
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
 
