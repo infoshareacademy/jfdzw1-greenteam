@@ -92,7 +92,10 @@ $ (function () {
 
         // create elements and remove it
 
-        setInterval(function () {
+        let totalGameTime = $gameStatus.timeToEnd;
+        let interval = 2;
+
+        let gameLoop = setInterval(function () {
             let $newItem = $('<div></div>');
 
             $newItem.css({
@@ -102,12 +105,18 @@ $ (function () {
                 'width': '100px',
                 'height': '100px',
                 'background-image': 'url("img/umbrella.png")',
+                'background-size': 'auto',
                 'z-index': 100
             })
 
             $newItem.appendTo('body').delay(6000).queue(function() { $(this).remove();});
 
-        }, 2000);
+            console.log(totalGameTime)
+            if ((totalGameTime -= interval) <= 0) {
+                clearInterval(gameLoop)
+            }
+
+        }, interval*1000);
 
     });
 
