@@ -66,7 +66,7 @@ $ (function () {
         var $gameStatus = {
             currentSeason: gameboard.getRandomBoard(),
             player: createPlayer ($playerName, 0),
-            timeToEnd: timer (61),
+            timeToEnd: 61,
             items:[scarf,sunglasses,winterCap,gloves,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons],
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
@@ -88,8 +88,9 @@ $ (function () {
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
+        timer($gameStatus.timeToEnd);
 
-
+        // create elements and remove it
 
         setInterval(function () {
             let $newItem = $('<div></div>');
@@ -106,7 +107,7 @@ $ (function () {
 
             $newItem.appendTo('body').delay(6000).queue(function() { $(this).remove();});
 
-            }, 2000);
+        }, 2000);
 
     });
 
@@ -130,7 +131,6 @@ $ (function () {
 
 
     let time = document.getElementById("time");
-
 
     function timer (timeToEnd) {
       if (timeToEnd === 0) {
