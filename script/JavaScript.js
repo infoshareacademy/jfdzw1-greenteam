@@ -248,11 +248,11 @@ $(function () {
         let pattern = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
         let $is_email = pattern.test($playerEmail);
 
-        let $object = $('#modalGameContent').empty();
+        let $object = $('.modal-body').empty();
 
         if ($playerName && $playerEmail && $is_email ) {
             $(`<object width="100%" height="700px" data ="game/index.html?name= ${$playerName}"></object>`)
-                .prependTo('#modalGameContent');
+                .prependTo('.modal-body');
 
             $('#modalGame').addClass('bs-modal-lg');
         }
