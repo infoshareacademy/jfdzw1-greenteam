@@ -127,7 +127,22 @@ $ (function () {
             newItem.appendTo('body').delay(12000).queue(function() { $(this).remove();})
         };
 
-        let currentPlayerScore = 0;
+        // count Points on click
+        function countPoints (newItem, randomItem) {
+            newItem.click(function (e) {
+                $(this).hide();
+
+                if (randomItem.season === $gameStatus.currentSeason.season) {
+                    $gameStatus.player.score =  $gameStatus.player.score + randomItem.points;
+                }
+                else {
+                    $gameStatus.player.score =  $gameStatus.player.score - randomItem.points;
+                }
+
+                console.log( $gameStatus.player.score);
+            });
+        }
+
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
@@ -136,14 +151,7 @@ $ (function () {
             let newItem = createNewGameItem(randomItem);
 
             showAndHideElement(newItem);
-
-            newItem.click(function () {
-
-                $(this).hide();
-
-                currentPlayerScore = currentPlayerScore + randomItem.points;
-                console.log(currentPlayerScore);
-            });
+            countPoints(newItem, randomItem);
 
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
