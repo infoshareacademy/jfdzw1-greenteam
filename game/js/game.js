@@ -99,6 +99,15 @@ $ (function () {
 
         // show currnet score and timer
         $('#playerScore').removeClass('hidden').addClass('show');
+
+        function showCurrentPlayerScore () {
+            $('#currentScore').empty();
+            $(`<b>${$gameStatus.player.score}</b>`)
+                .prependTo('#currentScore');
+        }
+
+        showCurrentPlayerScore ();
+
         $('#timer').removeClass('hidden').addClass('show');
 
         // start timer
@@ -128,17 +137,18 @@ $ (function () {
         };
 
         // count Points on click
-        function countPoints (newItem, randomItem) {
+        function countPointsOnClick (newItem, randomItem) {
             newItem.click(function (e) {
                 $(this).hide();
 
                 if (randomItem.season === $gameStatus.currentSeason.season) {
                     $gameStatus.player.score =  $gameStatus.player.score + randomItem.points;
+                    showCurrentPlayerScore ();
                 }
                 else {
                     $gameStatus.player.score =  $gameStatus.player.score - randomItem.points;
+                    showCurrentPlayerScore ();
                 }
-
                 console.log( $gameStatus.player.score);
             });
         }
@@ -151,7 +161,8 @@ $ (function () {
             let newItem = createNewGameItem(randomItem);
 
             showAndHideElement(newItem);
-            countPoints(newItem, randomItem);
+            countPointsOnClick(newItem, randomItem);
+
 
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
