@@ -91,7 +91,6 @@ $ (function () {
             }
         };
 
-
         // hide buttons
         $('.button').addClass("hidden");
 
@@ -102,38 +101,42 @@ $ (function () {
         $('#playerScore').removeClass('hidden').addClass('show');
         $('#timer').removeClass('hidden').addClass('show');
 
+        // start timer
+        timer($gameStatus.timeToEnd);
+
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
-        timer($gameStatus.timeToEnd);
-
-        // create elements and remove it
 
         let totalGameTime = $gameStatus.timeToEnd;
         let interval = 2;
 
-        let randomItemSeason = $gameStatus.getRandomItem().season;
+        // create new random item
+        function createNewGameItem () {
+            let randomItem = $gameStatus.getRandomItem();
 
-        console.log(randomItemSeason);
+            return (
+                $('<div></div>').addClass('gameItem').css({
+                    'top': `${Math.round(Math.random() * 600)}px`,
+                    'left': `${Math.round(Math.random() * 850)}px`,
+                    'background-image': `url("${randomItem.url}")`,
+                }).addClass(`${randomItem.season}`));
+        };
 
+        // show item and hide it with dealay
+        function showAndHideElement (newItem) {
+            newItem.appendTo('body').delay(12000).queue(function() { $(this).remove();})
+        };
 
+        // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
-            let $newItem = $('<div></div>');
-            let gameItem = $gameStatus.getRandomItem();
+            let newItem = createNewGameItem();
 
-            $newItem.addClass('gameItem').css({
-                'top': `${Math.round(Math.random() * 600)}px`,
-                'left': `${Math.round(Math.random() * 850)}px`,
-                'background-image': `url("${gameItem.url}")`,
-            })
+            showAndHideElement(newItem);
 
-            $newItem.appendTo('body').delay(6000).queue(function() { $(this).remove();});
-
-            console.log(totalGameTime)
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
             }
-
         }, interval*1000);
 
     });
