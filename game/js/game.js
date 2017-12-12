@@ -57,19 +57,19 @@ let wellingtons= {
     points: 10
 }
 let dress = {
-    season:'autumn',
+    season:'spring',
     url: 'img/dress.png',
     points: 10
 }
 
 let raincoat = {
-    season:'autumn',
+    season:'spring',
     url: 'img/raincoat.png',
     points: 10
 }
 
 let jacket= {
-    season:'autumn',
+    season:'spring',
     url: 'img/jacket.png',
     points: 10
 }
