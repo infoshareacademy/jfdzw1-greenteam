@@ -112,8 +112,7 @@ $ (function () {
         let interval = 2;
 
         // create new random item
-        function createNewGameItem () {
-            let randomItem = $gameStatus.getRandomItem();
+        function createNewGameItem (randomItem) {
 
             return (
                 $('<div></div>').addClass('gameItem').css({
@@ -128,11 +127,23 @@ $ (function () {
             newItem.appendTo('body').delay(12000).queue(function() { $(this).remove();})
         };
 
+        let currentPlayerScore = 0;
+
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
-            let newItem = createNewGameItem();
+
+            let randomItem = $gameStatus.getRandomItem();
+            let newItem = createNewGameItem(randomItem);
 
             showAndHideElement(newItem);
+
+            newItem.click(function () {
+
+                $(this).hide();
+
+                currentPlayerScore = currentPlayerScore + randomItem.points;
+                console.log(currentPlayerScore);
+            });
 
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
