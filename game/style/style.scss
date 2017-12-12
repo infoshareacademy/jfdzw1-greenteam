@@ -44,6 +44,15 @@ body {
   background-size: auto;
 }
 
+.gameItem {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
 /*** navigation ***/
 .button {
   height: 40px;

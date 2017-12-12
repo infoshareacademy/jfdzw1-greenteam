@@ -1,76 +1,76 @@
 let scarf= {
     season:'winter',
-    url: '../game/img/Scarf.png',
+    url: 'img/Scarf.png',
     points: 10
 }
 
 let winterCap= {
     season:'winter',
-    url: '../game/img/winter cap.png',
+    url: 'img/winter cap.png',
     points: 10
 }
 
 let gloves = {
     season:'winter',
-    url: '../game/img/gloves.png',
+    url: 'img/gloves.png',
     points: 10
 }
 
 let sunglasses = {
     season:'summer',
-    url: '../game/img/sunglasses.png',
+    url: 'img/sunglasses.png',
     points: 10
 }
 
 let swimsuit = {
     season:'summer',
-    url: '../game/img/swimsuit.png',
+    url: 'img/swimsuit.png',
     points: 10
 }
 let hat = {
     season:'summer',
-    url: '../game/img/hat.png',
+    url: 'img/hat.png',
     points: 10
 }
 
 let flipFlops = {
     season:'summer',
-    url: '../game/img/flipflops.png',
+    url: 'img/flipflops.png',
     points: 10
 }
 
 let coat = {
     season:'autumn',
-    url: '../game/img/darkcoat.png',
+    url: 'img/darkcoat.png',
     points: 10
 }
 
 let umbrella = {
     season:'autumn',
-    url: '../game/img/umbrella.png',
+    url: 'img/umbrella.png',
     points: 10
 }
 
 let wellingtons= {
     season:'autumn',
-    url: '../game/img/wellingtons.png',
+    url: 'img/wellingtons.png',
     points: 10
 }
 let dress = {
     season:'autumn',
-    url: '../game/img/dress.png',
+    url: 'img/dress.png',
     points: 10
 }
 
 let raincoat = {
     season:'autumn',
-    url: '../game/img/raincoat.png',
+    url: 'img/raincoat.png',
     points: 10
 }
 
 let jacket= {
     season:'autumn',
-    url: '../game/img/jacket.png',
+    url: 'img/jacket.png',
     points: 10
 }
 
@@ -87,9 +87,10 @@ $ (function () {
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
 
-                return items[randomIntem];
+                return $gameStatus.items[randomIntem];
             }
         };
+
 
         // hide buttons
         $('.button').addClass("hidden");
@@ -111,18 +112,19 @@ $ (function () {
         let totalGameTime = $gameStatus.timeToEnd;
         let interval = 2;
 
+        let randomItemSeason = $gameStatus.getRandomItem().season;
+
+        console.log(randomItemSeason);
+
+
         let gameLoop = setInterval(function () {
             let $newItem = $('<div></div>');
+            let gameItem = $gameStatus.getRandomItem();
 
-            $newItem.css({
-                'position': 'absolute',
+            $newItem.addClass('gameItem').css({
                 'top': `${Math.round(Math.random() * 600)}px`,
                 'left': `${Math.round(Math.random() * 850)}px`,
-                'width': '100px',
-                'height': '100px',
-                'background-image': 'url("img/umbrella.png")',
-                'background-size': 'auto',
-                'z-index': 100
+                'background-image': `url("${gameItem.url}")`,
             })
 
             $newItem.appendTo('body').delay(6000).queue(function() { $(this).remove();});
