@@ -100,13 +100,11 @@ $ (function () {
         // show currnet score and timer
         $('#playerScore').removeClass('hidden').addClass('show');
 
-        function showCurrentPlayerScore () {
-            $('#currentScore').empty();
-            $(`<b>${$gameStatus.player.score}</b>`)
-                .prependTo('#currentScore');
+        function updateScore () {
+            $('#currentScore').html($gameStatus.player.score);
         }
 
-        showCurrentPlayerScore ();
+        updateScore ();
 
         $('#timer').removeClass('hidden').addClass('show');
 
@@ -143,11 +141,11 @@ $ (function () {
 
                 if (randomItem.season === $gameStatus.currentSeason.season) {
                     $gameStatus.player.score =  $gameStatus.player.score + randomItem.points;
-                    showCurrentPlayerScore ();
+                    updateScore ();
                 }
                 else {
                     $gameStatus.player.score =  $gameStatus.player.score - randomItem.points;
-                    showCurrentPlayerScore ();
+                    updateScore ();
                 }
                 console.log( $gameStatus.player.score);
             });
