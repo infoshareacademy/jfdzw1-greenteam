@@ -56,6 +56,7 @@ let wellingtons= {
     url: 'img/wellingtons.png',
     points: 10
 }
+
 let dress = {
     season:'spring',
     url: 'img/dress.png',
@@ -89,6 +90,7 @@ $ (function () {
 
                 return $gameStatus.items[randomIntem];
             }
+
         };
 
         // hide buttons
@@ -100,10 +102,6 @@ $ (function () {
         // show currnet score and timer
         $('#playerScore').removeClass('hidden').addClass('show');
 
-        function updateScore () {
-            $('#currentScore').html($gameStatus.player.score);
-        }
-
         updateScore ();
 
         $('#timer').removeClass('hidden').addClass('show');
@@ -114,9 +112,9 @@ $ (function () {
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
-
-        let totalGameTime = $gameStatus.timeToEnd;
-        let interval = 1;
+        function updateScore () {
+            $('#currentScore').html($gameStatus.player.score);
+        }
 
         // create new random item
         function createNewGameItem (randomItem) {
@@ -140,17 +138,18 @@ $ (function () {
                 $(this).hide();
 
                 if (randomItem.season === $gameStatus.currentSeason.season) {
-                    $gameStatus.player.score =  $gameStatus.player.score + randomItem.points;
+                    $gameStatus.player.score += randomItem.points;
                     updateScore ();
                 }
                 else {
-                    $gameStatus.player.score =  $gameStatus.player.score - randomItem.points;
+                    $gameStatus.player.score -= randomItem.points;
                     updateScore ();
                 }
-                console.log( $gameStatus.player.score);
             });
         }
 
+        let totalGameTime = $gameStatus.timeToEnd;
+        let interval = 1;
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
@@ -160,7 +159,6 @@ $ (function () {
 
             showAndHideElement(newItem);
             countPointsOnClick(newItem, randomItem);
-
 
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
@@ -182,11 +180,7 @@ $ (function () {
 
     // show playerName 
     let $playerName = getParameterByName('name');
-
-    let $object = $('#currentPlayer').empty();
-    $(`<b>${$playerName}</b>`)
-        .prependTo('#currentPlayer');
-
+    $('#currentPlayer').html($playerName);
 
     let time = document.getElementById("time");
 
