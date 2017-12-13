@@ -118,17 +118,17 @@ $ (function () {
 
 
         let totalGameTime = $gameStatus.timeToEnd;
-        let interval = 2;
+        let interval = 1;
 
         // create new random item
         function createNewGameItem (randomItem) {
 
             return (
                 $('<div></div>').addClass('gameItem').css({
-                    'top': `${Math.round(Math.random() * 600)}px`,
-                    'left': `${Math.round(Math.random() * 850)}px`,
+                    'top': `${Math.round(Math.random() * 550)}px`,
+                    'left': `${Math.round(Math.random() * 800)}px`,
                     'background-image': `url("${randomItem.url}")`,
-                }).addClass(`${randomItem.season}`));
+                }).addClass(`${randomItem.season}`)); // do usunięcia
         };
 
         // show item and hide it with dealay
