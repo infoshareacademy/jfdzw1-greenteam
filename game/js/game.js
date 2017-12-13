@@ -148,8 +148,8 @@ $ (function () {
             });
         }
 
-        let totalGameTime = $gameStatus.timeToEnd;
-        let interval = 1;
+        let totalGameTime = $gameStatus.timeToEnd - 1;
+        let interval = 1.5;
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
@@ -163,8 +163,10 @@ $ (function () {
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
             }
-        }, interval*1000);
 
+            console.log(totalGameTime);
+
+        }, interval*1000);
     });
 
     // get player name form scr
