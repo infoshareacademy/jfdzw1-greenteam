@@ -6,7 +6,7 @@ let gameboard =
                 className: "winter-board"
             },
             {
-                sesaon: "spring",
+                season: "spring",
                 className: "spring-board"
             },
             {

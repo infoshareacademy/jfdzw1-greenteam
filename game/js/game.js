@@ -56,6 +56,7 @@ let wellingtons= {
     url: 'img/wellingtons.png',
     points: 10
 }
+
 let dress = {
     season:'spring',
     url: 'img/dress.png',
@@ -89,6 +90,7 @@ $ (function () {
 
                 return $gameStatus.items[randomIntem];
             }
+
         };
 
         // hide buttons
@@ -100,13 +102,7 @@ $ (function () {
         // show currnet score and timer
         $('#playerScore').removeClass('hidden').addClass('show');
 
-        function showCurrentPlayerScore () {
-            $('#currentScore').empty();
-            $(`<b>${$gameStatus.player.score}</b>`)
-                .prependTo('#currentScore');
-        }
-
-        showCurrentPlayerScore ();
+        updateScore ();
 
         $('#timer').removeClass('hidden').addClass('show');
 
@@ -116,19 +112,19 @@ $ (function () {
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
-
-        let totalGameTime = $gameStatus.timeToEnd;
-        let interval = 2;
+        function updateScore () {
+            $('#currentScore').html($gameStatus.player.score);
+        }
 
         // create new random item
         function createNewGameItem (randomItem) {
 
             return (
                 $('<div></div>').addClass('gameItem').css({
-                    'top': `${Math.round(Math.random() * 600)}px`,
-                    'left': `${Math.round(Math.random() * 850)}px`,
+                    'top': `${Math.round(Math.random() * 550)}px`,
+                    'left': `${Math.round(Math.random() * 800)}px`,
                     'background-image': `url("${randomItem.url}")`,
-                }).addClass(`${randomItem.season}`));
+                }).addClass(`${randomItem.season}`)); // do usunięcia
         };
 
         // show item and hide it with dealay
@@ -142,17 +138,18 @@ $ (function () {
                 $(this).hide();
 
                 if (randomItem.season === $gameStatus.currentSeason.season) {
-                    $gameStatus.player.score =  $gameStatus.player.score + randomItem.points;
-                    showCurrentPlayerScore ();
+                    $gameStatus.player.score += randomItem.points;
+                    updateScore ();
                 }
                 else {
-                    $gameStatus.player.score =  $gameStatus.player.score - randomItem.points;
-                    showCurrentPlayerScore ();
+                    $gameStatus.player.score -= randomItem.points;
+                    updateScore ();
                 }
-                console.log( $gameStatus.player.score);
             });
         }
 
+        let totalGameTime = $gameStatus.timeToEnd - 1;
+        let interval = 1.5;
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         let gameLoop = setInterval(function () {
@@ -163,12 +160,13 @@ $ (function () {
             showAndHideElement(newItem);
             countPointsOnClick(newItem, randomItem);
 
-
             if ((totalGameTime -= interval) <= 0) {
                 clearInterval(gameLoop)
             }
-        }, interval*1000);
 
+            console.log(totalGameTime);
+
+        }, interval*1000);
     });
 
     // get player name form scr
@@ -184,11 +182,7 @@ $ (function () {
 
     // show playerName 
     let $playerName = getParameterByName('name');
-
-    let $object = $('#currentPlayer').empty();
-    $(`<b>${$playerName}</b>`)
-        .prependTo('#currentPlayer');
-
+    $('#currentPlayer').html($playerName);
 
     let time = document.getElementById("time");
 

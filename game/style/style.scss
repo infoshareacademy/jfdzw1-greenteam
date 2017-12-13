@@ -41,16 +41,16 @@ body {
 
 .autumn-board {
   background-image: url("../img/autumboard.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
 .gameItem {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background-size: 100%;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
   background-repeat: no-repeat;
-  z-index: 100;
+  z-index: 2;
 }
 
 /*** navigation ***/
