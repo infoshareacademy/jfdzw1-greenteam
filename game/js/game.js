@@ -168,7 +168,14 @@ $ (function () {
             return seasonItems[seasonItem];
         }
 
-        // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
+
+        function initGame () {
+            levelOne();
+            setTimeout(levelTwo, 20000);
+            setTimeout(levelThree, 40000);
+        }
+
+        // level 1 - create new season item by 1500ms, show and hide it, stop loop when gameTime is <=20
         function levelOne(interval = 1.5) {
             let gameLoop = setInterval(function () {
 
@@ -185,6 +192,7 @@ $ (function () {
             }, interval*1000);
         }
 
+        // level 2 - create new random item by 2000ms, show and hide it, stop loop when gameTime is finished
         function levelTwo(interval = 2) {
             let gameLoop = setInterval(function () {
 
@@ -200,6 +208,7 @@ $ (function () {
             }, interval*1000);
         }
 
+        // level 3 - create new random item by 4000ms, show and hide it, stop loop when gameTime is finished
         function levelThree(interval = 4) {
             let gameLoop = setInterval(function () {
 
@@ -213,12 +222,6 @@ $ (function () {
                     clearInterval(gameLoop)
                 }
             }, interval*1000);
-        }
-
-        function initGame () {
-            levelOne();
-            setTimeout(levelTwo, 20000);
-            setTimeout(levelThree, 40000);
         }
     });
 
