@@ -90,7 +90,6 @@ $ (function () {
 
                 return $gameStatus.items[randomIntem];
             }
-
         };
 
         // hide buttons
@@ -112,6 +111,9 @@ $ (function () {
         // show random gameboard
         $('body').addClass($gameStatus.currentSeason.className);
 
+        // start game
+        initGame();
+
         function updateScore () {
             $('#currentScore').html($gameStatus.player.score);
         }
@@ -124,7 +126,7 @@ $ (function () {
                     'top': `${Math.round(Math.random() * 550)}px`,
                     'left': `${Math.round(Math.random() * 800)}px`,
                     'background-image': `url("${randomItem.url}")`,
-                }).addClass(`${randomItem.season}`)); // do usunięcia
+                }));
         };
 
         // show item and hide it with dealay
@@ -149,24 +151,63 @@ $ (function () {
         }
 
         let totalGameTime = $gameStatus.timeToEnd - 1;
-        let interval = 1.5;
+
+        let seasonItems = [];
+        items = $gameStatus.items;
+
+        function extractSeasonItem(items) {
+
+            for (var i = 0; i < items.length; i++) {
+                if ($gameStatus.items[i].season === $gameStatus.currentSeason.season ) {
+                    seasonItems.push($gameStatus.items[i]);
+                }
+                console.log (seasonItems);
+            }
+        }
+
+        function getSeasonItem () {
+            let seasonItem = Math.floor(Math.random() * seasonItems.length);
+            return seasonItems[seasonItem];
+        }
+
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
-        let gameLoop = setInterval(function () {
+        function levelOne(interval = 1.5) {
+            let gameLoop = setInterval(function () {
 
-            let randomItem = $gameStatus.getRandomItem();
-            let newItem = createNewGameItem(randomItem);
+                extractSeasonItem(items);
+                let seasonItem = getSeasonItem ();
+                let newItem = createNewGameItem(seasonItem);
 
-            showAndHideElement(newItem);
-            countPointsOnClick(newItem, randomItem);
+                showAndHideElement(newItem);
+                countPointsOnClick(newItem, seasonItem);
 
-            if ((totalGameTime -= interval) <= 0) {
-                clearInterval(gameLoop)
-            }
+                if ((totalGameTime -= interval) <= 20) {
+                    clearInterval(gameLoop)
+                }
+            }, interval*1000);
+        }
 
-            console.log(totalGameTime);
 
-        }, interval*1000);
+        function levelTwo(interval = 2) {
+            let gameLoop = setInterval(function () {
+
+                let randomItem = $gameStatus.getRandomItem();
+                let newItem = createNewGameItem(randomItem);
+
+                showAndHideElement(newItem);
+                countPointsOnClick(newItem, randomItem);
+
+                if ((totalGameTime -= interval) <= 0) {
+                    clearInterval(gameLoop)
+                }
+            }, interval*1000);
+        }
+
+        function initGame () {
+            levelOne();
+            setTimeout(levelTwo, 20000);
+        }
     });
 
     // get player name form scr
