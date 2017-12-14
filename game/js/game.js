@@ -150,7 +150,7 @@ $ (function () {
             });
         }
 
-        let totalGameTime = $gameStatus.timeToEnd - 1;
+        // get season item
         let seasonItems = [];
         items = $gameStatus.items;
 
@@ -168,6 +168,7 @@ $ (function () {
             return seasonItems[seasonItem];
         }
 
+        let totalGameTime = $gameStatus.timeToEnd - 1;
 
         function initGame () {
             levelOne();
