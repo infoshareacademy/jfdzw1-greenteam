@@ -96,7 +96,7 @@ $ (function () {
         $('.button').addClass("hidden");
 
         // change Welcome label
-        $('#player').empty().text('Player name');
+        $('#player').empty().text('Player name:');
 
         // show currnet score and timer
         $('#playerScore').removeClass('hidden').addClass('show');
@@ -260,7 +260,6 @@ $ (function () {
         timer(timeToEnd);
       }, 1000);
     }
-
 });
 
 
