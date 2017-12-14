@@ -151,7 +151,6 @@ $ (function () {
         }
 
         let totalGameTime = $gameStatus.timeToEnd - 1;
-
         let seasonItems = [];
         items = $gameStatus.items;
 
@@ -161,7 +160,6 @@ $ (function () {
                 if ($gameStatus.items[i].season === $gameStatus.currentSeason.season ) {
                     seasonItems.push($gameStatus.items[i]);
                 }
-                console.log (seasonItems);
             }
         }
 
@@ -169,7 +167,6 @@ $ (function () {
             let seasonItem = Math.floor(Math.random() * seasonItems.length);
             return seasonItems[seasonItem];
         }
-
 
         // create new item by 1000ms, show and hide it, stop loop when gameTime is finished
         function levelOne(interval = 1.5) {
@@ -188,8 +185,22 @@ $ (function () {
             }, interval*1000);
         }
 
-
         function levelTwo(interval = 2) {
+            let gameLoop = setInterval(function () {
+
+                let randomItem = $gameStatus.getRandomItem();
+                let newItem = createNewGameItem(randomItem);
+
+                showAndHideElement(newItem);
+                countPointsOnClick(newItem, randomItem);
+
+                if ((totalGameTime) <= 0) {
+                    clearInterval(gameLoop);
+                }
+            }, interval*1000);
+        }
+
+        function levelThree(interval = 4) {
             let gameLoop = setInterval(function () {
 
                 let randomItem = $gameStatus.getRandomItem();
@@ -207,6 +218,7 @@ $ (function () {
         function initGame () {
             levelOne();
             setTimeout(levelTwo, 20000);
+            setTimeout(levelThree, 40000);
         }
     });
 
