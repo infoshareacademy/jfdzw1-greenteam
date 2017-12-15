@@ -16,6 +16,18 @@ let gloves = {
     points: 10
 }
 
+let snowboots = {
+    season:'winter',
+    url: 'img/snowboots.png',
+    points: 10
+}
+
+let winter_bonus = {
+    season:'winter',
+    url: 'img/winter_bonus.png',
+    points: 100
+}
+
 let sunglasses = {
     season:'summer',
     url: 'img/sunglasses.png',
@@ -57,6 +69,12 @@ let wellingtons= {
     points: 10
 }
 
+let lowShoe = {
+    season:'autumn',
+    url: 'img/low-shoe.png',
+    points: 10
+}
+
 let dress = {
     season:'spring',
     url: 'img/dress.png',
@@ -69,9 +87,15 @@ let raincoat = {
     points: 10
 }
 
-let jacket= {
+let jacket = {
     season:'spring',
     url: 'img/jacket.png',
+    points: 10
+}
+
+let ballerina = {
+    season:'spring',
+    url: 'img/ballerina.png',
     points: 10
 }
 
@@ -84,7 +108,7 @@ $ (function () {
             currentSeason: gameboard.getRandomBoard(),
             player: createPlayer ($playerName, 0),
             timeToEnd: 61,
-            items:[scarf,sunglasses,winterCap,gloves,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons,dress,jacket,coat],
+            items:[scarf,sunglasses,winterCap,gloves,snowboots,winter_bonus,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons,lowShoe,dress,jacket,coat,ballerina],
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
 
