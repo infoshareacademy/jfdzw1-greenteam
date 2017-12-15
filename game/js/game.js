@@ -171,13 +171,13 @@ $ (function () {
         let totalGameTime = $gameStatus.timeToEnd - 1;
 
         function initGame () {
-            levelOne();
-            setTimeout(levelTwo, 20000);
-            setTimeout(levelThree, 40000);
+            initLevel(1.5, 0);
+            setTimeout(() => {nextLevel (2, 0)}, 20000);
+            setTimeout(() => {nextLevel (4, 0)}, 40000);
         }
 
         // level 1 - create new season item by 1500ms, show and hide it, stop loop when gameTime is <=20
-        function levelOne(interval = 1.5) {
+        function initLevel(interval, timeToEnd) {
             let gameLoop = setInterval(function () {
 
                 extractSeasonItem(items);
@@ -187,14 +187,14 @@ $ (function () {
                 showAndHideElement(newItem);
                 countPointsOnClick(newItem, seasonItem);
 
-                if ((totalGameTime -= interval) <= 20) {
+                if ((totalGameTime -= interval) <= timeToEnd) {
                     clearInterval(gameLoop)
                 }
             }, interval*1000);
         }
 
-        // level 2 - create new random item by 2000ms, show and hide it, stop loop when gameTime is finished
-        function levelTwo(interval = 2) {
+        // next level - create new random item, show and hide it, stop loop when gameTime is finished
+        function nextLevel(interval, timeToEnd) {
             let gameLoop = setInterval(function () {
 
                 let randomItem = $gameStatus.getRandomItem();
@@ -203,27 +203,13 @@ $ (function () {
                 showAndHideElement(newItem);
                 countPointsOnClick(newItem, randomItem);
 
-                if ((totalGameTime) <= 0) {
+                if ((totalGameTime) <= timeToEnd) {
                     clearInterval(gameLoop);
                 }
             }, interval*1000);
         }
 
-        // level 3 - create new random item by 4000ms, show and hide it, stop loop when gameTime is finished
-        function levelThree(interval = 4) {
-            let gameLoop = setInterval(function () {
 
-                let randomItem = $gameStatus.getRandomItem();
-                let newItem = createNewGameItem(randomItem);
-
-                showAndHideElement(newItem);
-                countPointsOnClick(newItem, randomItem);
-
-                if ((totalGameTime -= interval) <= 0) {
-                    clearInterval(gameLoop)
-                }
-            }, interval*1000);
-        }
     });
 
     // get player name form scr
