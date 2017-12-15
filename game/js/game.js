@@ -229,6 +229,8 @@ $ (function () {
 
                 if ((totalGameTime) <= timeToEnd) {
                     clearInterval(gameLoop);
+                    return alert ($playerName + " your score is: " + $gameStatus.player.score)
+
                 }
             }, interval*1000);
         }
