@@ -107,7 +107,7 @@ $ (function () {
         var $gameStatus = {
             currentSeason: gameboard.getRandomBoard(),
             player: createPlayer ($playerName, 0),
-            timeToEnd: 61,
+            timeToEnd: 5,
             items:[scarf,sunglasses,winterCap,gloves,snowboots,winter_bonus,hat,swimsuit,flipFlops,raincoat,umbrella,wellingtons,lowShoe,dress,jacket,coat,ballerina],
             getRandomItem: function getRandomItem () {
                 let randomIntem = Math.floor(Math.random() * this.items.length);
@@ -196,7 +196,7 @@ $ (function () {
 
         function initGame () {
             initLevel(1.5, 0);
-            setTimeout(() => {nextLevel (2, 0)}, 20000);
+            setTimeout(() => {nextLevel (2, 0)}, 5000);
             setTimeout(() => {nextLevel (4, 0)}, 40000);
         }
 
@@ -212,7 +212,13 @@ $ (function () {
                 countPointsOnClick(newItem, seasonItem);
 
                 if ((totalGameTime -= interval) <= timeToEnd) {
-                    clearInterval(gameLoop)
+                    clearInterval(gameLoop);
+                    initScoreboard (scoreboard);
+                    insertPlayer($gameStatus.player);
+                    //scoreboard.push($gameStatus.player);
+                    $(' tbody').append( `<tr><td>6</td><td>${$playerName}</td><td>${$gameStatus.player.score}</td></tr>`);
+                    $('#myModal').modal()
+                    console.log (scoreboard);
                 }
             }, interval*1000);
         }
@@ -229,8 +235,6 @@ $ (function () {
 
                 if ((totalGameTime) <= timeToEnd) {
                     clearInterval(gameLoop);
-                    return alert ($playerName + " your score is: " + $gameStatus.player.score)
-
                 }
             }, interval*1000);
         }
@@ -249,7 +253,7 @@ $ (function () {
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    // show playerName 
+    // show playerName
     let $playerName = getParameterByName('name');
     $('#currentPlayer').html($playerName);
 

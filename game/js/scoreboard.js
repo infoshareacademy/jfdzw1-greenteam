@@ -11,13 +11,16 @@ function initScoreboard (scoreboard) {
 
     while (i < 6) {
       initPlayerName = initPlayersNames[Math.floor (Math.random () * (initPlayersNames.length))];
-      initPlayerScore = i * 1000;
+      initPlayerScore = i * 100;
       initPlayer = createPlayer (initPlayerName, initPlayerScore);
       insertPlayer (initPlayer);
       i++;
     }
   }
 }
+
+
+
 
 function createPlayer (text, number) {
 
