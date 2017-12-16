@@ -11,7 +11,7 @@ function initScoreboard (scoreboard) {
 
     while (i < 6) {
       initPlayerName = initPlayersNames[Math.floor (Math.random () * (initPlayersNames.length))];
-      initPlayerScore = i * 100;
+      initPlayerScore = i * 10;
       initPlayer = createPlayer (initPlayerName, initPlayerScore);
       insertPlayer (initPlayer);
       i++;
@@ -44,9 +44,9 @@ function sortPlayers (pl1, pl2) {
 }
 
 
-function getResults (arr) {
+function getResults () {
 
-  let newArr = arr.slice (0, arr.length);
+  let newArr = scoreboard.slice (0, scoreboard.length);
   return newArr;
 }
 

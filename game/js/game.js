@@ -215,10 +215,13 @@ $ (function () {
                     clearInterval(gameLoop);
                     initScoreboard (scoreboard);
                     insertPlayer($gameStatus.player);
-                    //scoreboard.push($gameStatus.player);
-                    $(' tbody').append( `<tr><td>6</td><td>${$playerName}</td><td>${$gameStatus.player.score}</td></tr>`);
+                    getResults();
+                    console.log(getResults());
+                    getResults().forEach((p,i) =>{
+                        $(' tbody').append( `<tr><td>${i+1}</td><td>${p.name}</td><td>${p.score}</td></tr>`);
+
+                    });
                     $('#myModal').modal()
-                    console.log (scoreboard);
                 }
             }, interval*1000);
         }
