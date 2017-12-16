@@ -229,7 +229,15 @@ $ (function () {
         countPointsOnClick (newItem, seasonItem);
 
         if ((totalGameTime -= interval) <= timeToEnd) {
-          clearInterval (gameLoop)
+          clearInterval (gameLoop);
+            initScoreboard (scoreboard);
+            insertPlayer($gameStatus.player);
+            getResults();
+            console.log(getResults());
+            getResults().forEach((p,i) =>{
+            $(' tbody').append( `<tr><td>${i+1}</td><td>${p.name}</td><td>${p.score}</td></tr>`);
+            });
+            $('#myModal').modal()
         }
       }, interval * 1000);
       return gameLoop;
@@ -247,7 +255,7 @@ $ (function () {
 
         if ((totalGameTime) <= timeToEnd) {
           clearInterval (gameLoop);
-          return alert ($playerName + " your score is: " + $gameStatus.player.score)
+          return
 
         }
       }, interval * 1000);
